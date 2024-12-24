@@ -37,8 +37,9 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'OneSignal' do |onesignal|
-    onesignal.ios.vendored_frameworks = 'Frameworks/SuperViewOneSignal.xcframework', 'Frameworks/OneSignal.xcframework'
+    onesignal.ios.vendored_frameworks = 'Frameworks/SuperViewOneSignal.xcframework''
     onesignal.dependency 'SuperView/Core'
+    onesignal.dependency 'OneSignal/OneSignal', '5.2.9'
   end
 
   s.subspec 'AdMob' do |admob|
