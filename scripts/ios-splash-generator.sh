@@ -46,42 +46,41 @@ USAGE:
     $0 srcfile dstpath
 
 DESCRIPTION:
-    This script aim to generate ios app icons easier and simply.
+    This script aims to generate iOS app splash images easily and simply.
 
-    srcfile - The source png image. Preferably above 1024x1024
-    dstpath - The destination path where the icons generate to.
+    srcfile - The source PNG image. Preferably above 2048x2048
+    dstpath - The destination path where the splash image will be generated.
 
-    This script is depend on ImageMagick. So you must install ImageMagick first
-    You can use 'sudo brew install ImageMagick' to install it
+    This script depends on ImageMagick. So you must install ImageMagick first.
+    You can use 'sudo brew install ImageMagick' to install it.
 
 AUTHOR:
     Pawpaw<lvyexuwenfa100@126.com>
 
 LICENSE:
-    This script follow MIT license.
+    This script follows the MIT license.
 
 EXAMPLE:
-    $0 1024.png ~/123
+    $0 splash_source.png ~/123
 EOF
 }
 
 # Check ImageMagick
-command -v convert >/dev/null 2>&1 || { error >&2 "The ImageMagick is not installed. Please use brew to install it first."; exit -1; }
+command -v magick >/dev/null 2>&1 || { error >&2 "ImageMagick is not installed. Please use brew to install it first."; exit -1; }
 
-# Check param
+# Check parameters
 if [ $# != 2 ];then
     usage
     exit -1
 fi
 
-# Check dst path whether exist.
+# Check if destination path exists
 if [ ! -d "$DST_PATH" ];then
     mkdir -p "$DST_PATH"
 fi
 
-# Generate, refer to:https://developer.apple.com/library/ios/qa/qa1686/_index.html
-
+# Generate splash image
 info 'Generate splash.png ...'
-convert "$SRC_FILE" -resize 2048x2048 "$DST_PATH/splash.png"
+magick "$SRC_FILE" -resize 2048x2048 "$DST_PATH/splash.png"
 
 info 'Generate Done.'

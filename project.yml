@@ -3,7 +3,7 @@ settingGroups:
   commonBuildSettings:
     SWIFT_VERSION: 5
     CURRENT_PROJECT_VERSION: 1
-    IPHONEOS_DEPLOYMENT_TARGET: 13.0
+    IPHONEOS_DEPLOYMENT_TARGET: 15.6
     SWIFT_OPTIMIZATION_LEVEL: -Onone
     TARGETED_DEVICE_FAMILY: '1'
     ENABLE_BITCODE: NO
@@ -14,7 +14,7 @@ targets:
   App:
     type: application
     platform: iOS
-    deploymentTarget: 13.0
+    deploymentTarget: 15.6
     sources:
       - path: Sources
 #      - path: www

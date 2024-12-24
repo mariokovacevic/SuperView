@@ -5,86 +5,123 @@ set -e
 trap "exit 1" TERM
 TOP_PID=$$
 
-DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
 function alert() {
-   echo "😭 - There was an error"
-   kill -s TERM $TOP_PID
+    echo "😭 - There was an error"
+    kill -s TERM $TOP_PID
+}
+
+function log() {
+    local message=$1
+    local status=$2
+    if [ "$status" == "error" ]; then
+        echo "🔥 - $message"
+    elif [ "$status" == "info" ]; then
+        echo "🔄 - $message"
+    else
+        echo "👏 - $message"
+    fi
+}
+
+function bundleInstall() {
+    echo "✋ - Installing gems"
+    local output=$(bundle install 2>&1)
+    echo "$output"
+
+    if [[ $output == *"Bundle complete!"* ]]; then
+        log "Gems installed successfully" "success"
+    else
+        log "Gem installation failed" "error"
+        alert
+    fi
 }
 
 function generateAppIcon() {
     echo "✋ - Generating App Icons"
-    generator=$DIR/scripts/ios-icon-generator.sh;
-    appIcon=$DIR/Icons/app_icon.png;
-    appIconAssets=$DIR/Sources/Assets.xcassets/AppIcon.appiconset/;
-    handleGenerate=$(/bin/sh "$generator" "$appIcon" "$appIconAssets");
+    local generator="$DIR/scripts/ios-icon-generator.sh"
+    local appIcon="$DIR/Icons/app_icon.png"
+    local appIconAssets="$DIR/Sources/Assets.xcassets/AppIcon.appiconset/"
+    local output
 
-    if [[ $handleGenerate == *"Generate Done"* ]]; then
-      echo "👍 - App Icon created"
+    output=$(/bin/sh "$generator" "$appIcon" "$appIconAssets")
+    echo "$output"
+
+    if [[ $output == *"Generate Done"* ]]; then
+        log "App Icon created successfully" "success"
     else
-      echo "🔥 - App Icon generating failed"
-      alert
+        log "App Icon generation failed" "error"
+        alert
     fi
 }
 
 function generateSplash() {
-    echo "✋ - Generating App Icons"
-    generator=$DIR/scripts/ios-splash-generator.sh;
-    splashIcon=$DIR/Icons/splash.png;
-    splashIconAssets=$DIR/Sources/Assets.xcassets/splash.imageset/;
-    handleGenerate=$(/bin/sh "$generator" "$splashIcon" "$splashIconAssets");
+    echo "✋ - Generating Splash Screen"
+    local generator="$DIR/scripts/ios-splash-generator.sh"
+    local splashIcon="$DIR/Icons/splash.png"
+    local splashIconAssets="$DIR/Sources/Assets.xcassets/splash.imageset/"
+    local output
 
-    if [[ $handleGenerate == *"Generate Done"* ]]; then
-      echo "👍 - Splash created"
+    output=$(/bin/sh "$generator" "$splashIcon" "$splashIconAssets")
+    echo "$output"
+
+    if [[ $output == *"Generate Done"* ]]; then
+        log "Splash Screen created successfully" "success"
     else
-      echo "🔥 - Splash generating failed"
-      alert
+        log "Splash Screen generation failed" "error"
+        alert
     fi
 }
 
 function createProject() {
     echo "✋ - Generating project"
-    cd "$DIR";
-    createXcode=$(xcodegen)
+    local output=$(xcodegen 2>&1)
+    echo "$output"
 
-    if [[ $createXcode == *"Created project"* ]]; then
-      echo "👍 - Xcode project created"
+    if [[ $output == *"Created project"* ]]; then
+        log "Xcode project created successfully" "success"
     else
-      echo "🔥 - Xcode project generating failed"
-      alert
+        log "Xcode project creation failed" "error"
+        alert
     fi
 }
 
 function openProject() {
-    openXcode=$(xed .);
-    if $openXcode; then
-      echo "👏 - Let's open the project now"
-      kill -9 $PPID
-    else
-      echo "🔥 - Can't open Xcode project"
-      alert
-    fi
+    echo "✋ - Opening Xcode project"
+    xed . || { log "Failed to open Xcode project" "error"; alert; }
+    log "Project opened in Xcode" "success"
 }
 
 function podInstall() {
-    installPods=$(pod install)
-    if [[ $installPods == *"Pod installation complete!"* ]]; then
-      echo "👏 - DONE"
-      #otvori xcode
-      $(xed .);
-      kill -9 $PPID
+    echo "✋ - Installing Pods"
+    bundle exec pod install || { log "Pod installation failed" "error"; alert; }
+
+    local workspacePath="$DIR/App.xcworkspace"
+
+    echo "🔍 Checking for App.xcworkspace at: $workspacePath"
+    ls -l "$DIR" # List contents of the directory for debugging
+
+    if [ -d "$workspacePath" ]; then
+        log "App.xcworkspace directory found successfully" "success"
     else
-      echo "🔥 - Can't install pods"
-      alert
+        log "App.xcworkspace directory is missing or not recognized" "error"
+        alert
     fi
 }
 
-cd "$DIR";
-$(rm -rf *.xcodeproj);
-$(rm -rf *.xcworkspace);
-$(rm -rf Pods);
-$(rm -rf Podfile.lock);
+function cleanEnvironment() {
+    echo "✋ - Cleaning up environment"
+    rm -rf *.xcodeproj
+    rm -rf *.xcworkspace
+    rm -rf Pods
+    rm -rf Podfile.lock
+    log "Environment cleaned up" "success"
+}
 
+# Main script execution
+cd "$DIR"
+cleanEnvironment
+bundleInstall
 generateAppIcon
 generateSplash
 createProject
