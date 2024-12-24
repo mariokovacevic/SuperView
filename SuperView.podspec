@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'CardScan' do |card|
-    qcardr.ios.vendored_frameworks = 'Frameworks/SuperViewCardScan.xcframework'
+    card.ios.vendored_frameworks = 'Frameworks/SuperViewCardScan.xcframework'
     card.dependency 'SuperView/CardScan'
   end
 
