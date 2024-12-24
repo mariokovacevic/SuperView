@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.author       = { 'Brommko LLC' => 'brommko@yahoo.com' }
-  s.platform     = :ios, '13.0'
+  s.platform     = :ios, '15.6'
   s.source       = { 
     :git => 'https://github.com/brommko/SuperView.git',
     :tag => s.version.to_s,
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   s.subspec 'Core' do |core|
     core.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
-    core.ios.deployment_target = '13.0'
+    core.ios.deployment_target = '15.6'
     core.ios.vendored_frameworks = 'Frameworks/SuperViewCore.xcframework'
   end
 
@@ -72,6 +72,11 @@ Pod::Spec.new do |s|
   s.subspec 'QR' do |qr|
     qr.ios.vendored_frameworks = 'Frameworks/SuperViewQR.xcframework'
     qr.dependency 'SuperView/Core'
+  end
+
+  s.subspec 'CardScan' do |card|
+    qcardr.ios.vendored_frameworks = 'Frameworks/SuperViewCardScan.xcframework'
+    card.dependency 'SuperView/CardScan'
   end
 
 end
