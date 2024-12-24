@@ -38,7 +38,7 @@
 
     function getOneSignalToken() {
         window.bridge.post('onesignaltoken', {}, (results, error) => {
-            $('#onesignal_token').html(results.token)
+            $('#onesignal_token').html("OneSignal ID: " + results.onesignalId + " <br /> PushSubscriptionId: " + results.pushSubscriptionID)
         })
     }
 
@@ -99,6 +99,10 @@
         window.bridge.post('app_purchased', {}, (results, error) => {
             $('#purchased').html("purchased: " + results.purchased)
         })
+    }
+        
+    function requestNotificationPermission() {
+        window.bridge.post('request_notification_permission');
     }
 
     function createLocalNotification(display, message) {
@@ -188,8 +192,9 @@
         window.bridge.post('scan_qr');
 
         var unregisterHandler = window.bridge.on('scan_qr_details', (parameters)=> {
-             $('#qr_details').html("data: " + parameters.data);
-         })
+            $('#qr_details').html("data: " + parameters.data);
+            console.log(parameters.data);
+        });
     }
     </script>
 
@@ -208,7 +213,7 @@
                             <h4 class="card-title">Welcome</h4>
                             <p class="card-text">SuperView is an Xcode project that allows you to wrap your website in a super simple iOS app. If you are a web developer who wants to release an iOS app, this should help you cut some corners when it comes to learning Swift. It is ideal for single page web app with on-screen/no navigation. For example, a game, interactive page, web based slideshow, etc.</p>
                             <div class="read-more">
-                                <a href="https://codecanyon.net/item/universal-webview-ios-app-push-notification-swift-admob/17383449" class="btn btn-primary">SuperView App Page</a>
+                                <a href="https://superview.app" class="btn btn-primary">SuperView App Page</a>
                             </div>
                         </div>
                     </div>
@@ -391,6 +396,17 @@
                             <p id="purchased"></p>
                             <div class="read-more">
                                 <a id="is_ads_removed" class="btn btn-primary" onClick="isProductPurchased()" >Is purchased</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-16">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">Request Notification Permission</h4>
+                            <div class="read-more">
+                                <a id="local_notification" class="btn btn-primary" onClick="requestNotificationPermission()" >Request</a>
                             </div>
                         </div>
                     </div>

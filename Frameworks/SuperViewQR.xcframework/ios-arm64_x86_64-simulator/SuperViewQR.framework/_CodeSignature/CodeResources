@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SuperViewQR-Swift.h</key>
 		<data>
-		LPCJdyOcIWwnhYhRdT28U5LcurU=
+		jK5qJzd0QRBlHFSo9c48u+2n9hE=
 		</data>
 		<key>Headers/SuperViewQR.h</key>
 		<data>
@@ -14,59 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2Kgxifr0W0lrV/0Ux5vrKxhKWmI=
+		wxvEKjHaR9MY8j7wJQs4HHnKbos=
+		</data>
+		<key>Modules/SuperViewQR.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		Mm2Nh+mSMnOYYKlp7ISxpncl+Q4=
+		</data>
+		<key>Modules/SuperViewQR.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		wyw4rFYRiyBQ3jLVSPlNDdv3D14=
 		</data>
 		<key>Modules/SuperViewQR.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		shS9rNHnkulLae03vJO6jTMnH3w=
+		rwJwV6HFkIyXUV0nW5bBiTHoruM=
 		</data>
 		<key>Modules/SuperViewQR.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lPbwa1+IdCCauwElt3qJQFMZGdo=
+		wyw4rFYRiyBQ3jLVSPlNDdv3D14=
 		</data>
 		<key>Modules/SuperViewQR.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/Sbaxms8VWj2uIhxkUlL2Nc20Os=
+		zgpFV6vJBAa3YC8pdJCMiPPWLuA=
 		</data>
-		<key>Modules/SuperViewQR.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/SuperViewQR.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		shS9rNHnkulLae03vJO6jTMnH3w=
+		Mm2Nh+mSMnOYYKlp7ISxpncl+Q4=
 		</data>
-		<key>Modules/SuperViewQR.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/SuperViewQR.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lPbwa1+IdCCauwElt3qJQFMZGdo=
-		</data>
-		<key>Modules/SuperViewQR.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		/Sbaxms8VWj2uIhxkUlL2Nc20Os=
+		sppFdvucBPZOAgNxtC5ktRz1kQo=
 		</data>
 		<key>Modules/SuperViewQR.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		e9PWubby26JEqmxz7VtANQTRsjc=
+		shFkA3texYGhmnddFw5NGdGQK4E=
 		</data>
 		<key>Modules/SuperViewQR.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iT8Y2yEcik7mSIDPbFOSpnbM4FQ=
+		sppFdvucBPZOAgNxtC5ktRz1kQo=
 		</data>
 		<key>Modules/SuperViewQR.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		328uXO8DXK9Mb8UKOSzU8tYVtu8=
-		</data>
-		<key>Modules/SuperViewQR.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		e9PWubby26JEqmxz7VtANQTRsjc=
-		</data>
-		<key>Modules/SuperViewQR.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		iT8Y2yEcik7mSIDPbFOSpnbM4FQ=
-		</data>
-		<key>Modules/SuperViewQR.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		328uXO8DXK9Mb8UKOSzU8tYVtu8=
+		CTPIeidSJSQ/eARr3+yp9k/6MiA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		/7cj3u9IShCeksB7JexVprD6wsU=
+		A7/wyuO+j0hiFlu0vN0qpy24Bgs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eqVxKXIMZehQwTzf1jvd6Eb9E5UZLHMeK/KYC1Ipdyw=
+			O03d+mPAxe74CiHDEGYiqAL2ndCFJ0LL5zdWJYajAh8=
 			</data>
 		</dict>
 		<key>Headers/SuperViewQR.h</key>
@@ -85,95 +77,81 @@
 			3BUxVCSJa4Aj0RRz07z13uKuGFkMDpdyyhEW8/u5NsM=
 			</data>
 		</dict>
+		<key>Modules/SuperViewQR.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1LbsExD9+gOEtrTlDKEYurK2oDKX5yXcXQIYJKjS8YM=
+			</data>
+		</dict>
+		<key>Modules/SuperViewQR.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eFXvg+KCPUHVNcy2Wm7SowSKjvUmonShCJl7YaT8tw4=
+			</data>
+		</dict>
 		<key>Modules/SuperViewQR.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ekNpwUlEjRYhWWhjCJhfGbrpvz0RN4DT5QGWvkYCdO4=
+			v7LPvkkGG/vLwcAAWLMkbp+Mq2E73nt8IfOUJ/QDK7M=
 			</data>
 		</dict>
 		<key>Modules/SuperViewQR.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s9IlTTfi4DuXUzRZr5flSz3v2vYwKa+XoB0iVoeAmvo=
+			eFXvg+KCPUHVNcy2Wm7SowSKjvUmonShCJl7YaT8tw4=
 			</data>
 		</dict>
 		<key>Modules/SuperViewQR.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ppEIBIolaSsgHot2qfGH4GwKE40yEO7o0Fk5XXJR3uo=
+			Lq/R7obOiHg8DvtaRD6byHhJ/yBM0pKh3vRsJfL7V+o=
 			</data>
 		</dict>
-		<key>Modules/SuperViewQR.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/SuperViewQR.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ekNpwUlEjRYhWWhjCJhfGbrpvz0RN4DT5QGWvkYCdO4=
+			1LbsExD9+gOEtrTlDKEYurK2oDKX5yXcXQIYJKjS8YM=
 			</data>
 		</dict>
-		<key>Modules/SuperViewQR.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/SuperViewQR.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s9IlTTfi4DuXUzRZr5flSz3v2vYwKa+XoB0iVoeAmvo=
-			</data>
-		</dict>
-		<key>Modules/SuperViewQR.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ppEIBIolaSsgHot2qfGH4GwKE40yEO7o0Fk5XXJR3uo=
+			VshfxrQMibYa4V7EGOsX8W5YzDBNzcx6MU9QN1VvKBw=
 			</data>
 		</dict>
 		<key>Modules/SuperViewQR.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MQ3YMseIc0lDAThHG/qFy7l6y2/T22cZJqfhRaO4ggI=
+			aqL1ebPegHEWDuPo+vb4RiDgvH7PCHvGCMBbrEWmqhY=
 			</data>
 		</dict>
 		<key>Modules/SuperViewQR.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kPacQ3J0T4IKhB+s5Tr5d7ve6zdeMKcNyEiArMOVlC4=
+			VshfxrQMibYa4V7EGOsX8W5YzDBNzcx6MU9QN1VvKBw=
 			</data>
 		</dict>
 		<key>Modules/SuperViewQR.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kVsbVa6/AbQq8/BKly255HDZzyle9Vp3LSO3rHOvFFo=
-			</data>
-		</dict>
-		<key>Modules/SuperViewQR.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MQ3YMseIc0lDAThHG/qFy7l6y2/T22cZJqfhRaO4ggI=
-			</data>
-		</dict>
-		<key>Modules/SuperViewQR.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kPacQ3J0T4IKhB+s5Tr5d7ve6zdeMKcNyEiArMOVlC4=
-			</data>
-		</dict>
-		<key>Modules/SuperViewQR.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kVsbVa6/AbQq8/BKly255HDZzyle9Vp3LSO3rHOvFFo=
+			cdS89fUNHyb7O4+alojz0v+fP1RDoy8rjAXdNr1zfP8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			asBes5hLZ9W/d677idTMDSYtQ+GisiCaXCEdPlsobek=
+			ea29yMkg2hM4o65aLQ9COUB6Kf57aL8TPMcmWhPbLio=
 			</data>
 		</dict>
 	</dict>

@@ -1,0 +1,688 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SuperViewOneSignal",
+    "printedName": "SuperViewOneSignal",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewOneSignal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SuperViewCore",
+        "printedName": "SuperViewCore",
+        "declKind": "Import",
+        "moduleName": "SuperViewOneSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "OneSignalFramework",
+        "printedName": "OneSignalFramework",
+        "declKind": "Import",
+        "moduleName": "SuperViewOneSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "SuperViewOneSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "SuperViewOneSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewOneSignal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SuperViewCore",
+        "printedName": "SuperViewCore",
+        "declKind": "Import",
+        "moduleName": "SuperViewOneSignal"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OneSignalPayload",
+        "printedName": "OneSignalPayload",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18SuperViewOneSignal0cD7PayloadV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18SuperViewOneSignal0cD7PayloadV6encode2toys7Encoder_p_tKF",
+            "moduleName": "SuperViewOneSignal",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18SuperViewOneSignal0cD7PayloadV",
+        "mangledName": "$s18SuperViewOneSignal0cD7PayloadV",
+        "moduleName": "SuperViewOneSignal",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OneSignalContent",
+        "printedName": "OneSignalContent",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18SuperViewOneSignal0cD7ContentV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18SuperViewOneSignal0cD7ContentV6encode2toys7Encoder_p_tKF",
+            "moduleName": "SuperViewOneSignal",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18SuperViewOneSignal0cD7ContentV",
+        "mangledName": "$s18SuperViewOneSignal0cD7ContentV",
+        "moduleName": "SuperViewOneSignal",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OneSignalResponse",
+        "printedName": "OneSignalResponse",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OneSignalResponse",
+                "printedName": "SuperViewOneSignal.OneSignalResponse",
+                "usr": "s:18SuperViewOneSignal0cD8ResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18SuperViewOneSignal0cD8ResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18SuperViewOneSignal0cD8ResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "SuperViewOneSignal",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18SuperViewOneSignal0cD8ResponseV",
+        "mangledName": "$s18SuperViewOneSignal0cD8ResponseV",
+        "moduleName": "SuperViewOneSignal",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewOneSignal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SuperViewCore",
+        "printedName": "SuperViewCore",
+        "declKind": "Import",
+        "moduleName": "SuperViewOneSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "OneSignalFramework",
+        "printedName": "OneSignalFramework",
+        "declKind": "Import",
+        "moduleName": "SuperViewOneSignal"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkManager",
+        "printedName": "NetworkManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sendOneSignalNotification",
+            "printedName": "sendOneSignalNotification(notification:api:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OneSignalPayload",
+                "printedName": "SuperViewOneSignal.OneSignalPayload",
+                "usr": "s:18SuperViewOneSignal0cD7PayloadV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SuperViewOneSignal.OneSignalResponse?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(SuperViewOneSignal.OneSignalResponse?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "SuperViewOneSignal.OneSignalResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OneSignalResponse",
+                            "printedName": "SuperViewOneSignal.OneSignalResponse",
+                            "usr": "s:18SuperViewOneSignal0cD8ResponseV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore14NetworkManagerC0aB9OneSignalE04sendfG12Notification12notification3api10completionyAD0fG7PayloadV_SSyAD0fG8ResponseVSg_SSSgtctFZ",
+            "mangledName": "$s13SuperViewCore14NetworkManagerC0aB9OneSignalE04sendfG12Notification12notification3api10completionyAD0fG7PayloadV_SSyAD0fG8ResponseVSg_SSSgtctFZ",
+            "moduleName": "SuperViewOneSignal",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13SuperViewCore14NetworkManagerC",
+        "mangledName": "$s13SuperViewCore14NetworkManagerC",
+        "moduleName": "SuperViewCore",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SuperView",
+        "printedName": "SuperView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configureOneSignal",
+            "printedName": "configureOneSignal()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewOneSignal@SuperViewCore@objc(cs)SuperView(cm)configureOneSignal",
+            "mangledName": "$s13SuperViewCore0aB0C0aB9OneSignalE09configuredE0yyFZ",
+            "moduleName": "SuperViewOneSignal",
+            "static": true,
+            "intro_iOS": "15.6",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userNotificationCenter",
+            "printedName": "userNotificationCenter(_:willPresent:withCompletionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UNUserNotificationCenter",
+                "printedName": "UserNotifications.UNUserNotificationCenter",
+                "usr": "c:objc(cs)UNUserNotificationCenter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UNNotification",
+                "printedName": "UserNotifications.UNNotification",
+                "usr": "c:objc(cs)UNNotification"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserNotifications.UNNotificationPresentationOptions) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UNNotificationPresentationOptions",
+                    "printedName": "UserNotifications.UNNotificationPresentationOptions",
+                    "usr": "c:@E@UNNotificationPresentationOptions"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore0aB0C0aB9OneSignalE22userNotificationCenter_11willPresent21withCompletionHandlerySo06UNUsergH0C_So14UNNotificationCySo0O19PresentationOptionsVctF",
+            "mangledName": "$s13SuperViewCore0aB0C0aB9OneSignalE22userNotificationCenter_11willPresent21withCompletionHandlerySo06UNUsergH0C_So14UNNotificationCySo0O19PresentationOptionsVctF",
+            "moduleName": "SuperViewOneSignal",
+            "declAttributes": [
+              "AccessControl",
+              "NonObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userNotificationCenter",
+            "printedName": "userNotificationCenter(_:didReceive:withCompletionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UNUserNotificationCenter",
+                "printedName": "UserNotifications.UNUserNotificationCenter",
+                "usr": "c:objc(cs)UNUserNotificationCenter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UNNotificationResponse",
+                "printedName": "UserNotifications.UNNotificationResponse",
+                "usr": "c:objc(cs)UNNotificationResponse"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore0aB0C0aB9OneSignalE22userNotificationCenter_10didReceive21withCompletionHandlerySo06UNUsergH0C_So22UNNotificationResponseCyyctF",
+            "mangledName": "$s13SuperViewCore0aB0C0aB9OneSignalE22userNotificationCenter_10didReceive21withCompletionHandlerySo06UNUsergH0C_So22UNNotificationResponseCyyctF",
+            "moduleName": "SuperViewOneSignal",
+            "declAttributes": [
+              "AccessControl",
+              "NonObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userNotificationCenter",
+            "printedName": "userNotificationCenter(_:openSettingsFor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UNUserNotificationCenter",
+                "printedName": "UserNotifications.UNUserNotificationCenter",
+                "usr": "c:objc(cs)UNUserNotificationCenter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UserNotifications.UNNotification?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UNNotification",
+                    "printedName": "UserNotifications.UNNotification",
+                    "usr": "c:objc(cs)UNNotification"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore0aB0C0aB9OneSignalE22userNotificationCenter_15openSettingsForySo06UNUsergH0C_So14UNNotificationCSgtF",
+            "mangledName": "$s13SuperViewCore0aB0C0aB9OneSignalE22userNotificationCenter_15openSettingsForySo06UNUsergH0C_So14UNNotificationCSgtF",
+            "moduleName": "SuperViewOneSignal",
+            "declAttributes": [
+              "AccessControl",
+              "NonObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SuperViewCore@objc(cs)SuperView",
+        "mangledName": "$s13SuperViewCore0aB0C",
+        "moduleName": "SuperViewCore",
+        "declAttributes": [
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewOneSignal\/NetworkManager+OneSignal.swift",
+      "kind": "StringLiteral",
+      "offset": 492,
+      "length": 8,
+      "value": "\"app_id\""
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewOneSignal\/NetworkManager+OneSignal.swift",
+      "kind": "StringLiteral",
+      "offset": 533,
+      "length": 20,
+      "value": "\"include_player_ids\""
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewOneSignal\/NetworkManager+OneSignal.swift",
+      "kind": "StringLiteral",
+      "offset": 578,
+      "length": 10,
+      "value": "\"headings\""
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewOneSignal\/NetworkManager+OneSignal.swift",
+      "kind": "StringLiteral",
+      "offset": 613,
+      "length": 10,
+      "value": "\"contents\""
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewOneSignal\/NetworkManager+OneSignal.swift",
+      "kind": "StringLiteral",
+      "offset": 648,
+      "length": 10,
+      "value": "\"subtitle\""
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewOneSignal\/NetworkManager+OneSignal.swift",
+      "kind": "StringLiteral",
+      "offset": 681,
+      "length": 9,
+      "value": "\"app_url\""
+    }
+  ]
+}

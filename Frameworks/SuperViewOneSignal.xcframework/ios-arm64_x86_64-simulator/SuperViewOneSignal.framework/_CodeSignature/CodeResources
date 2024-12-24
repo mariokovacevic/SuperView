@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SuperViewOneSignal-Swift.h</key>
 		<data>
-		IWkNVfd34R7gUCV9/IzmaA9e7rk=
+		TmH3/y+SVpATij4v4WK2RxxqAuY=
 		</data>
 		<key>Headers/SuperViewOneSignal.h</key>
 		<data>
@@ -14,59 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BIC7CR9TR/YxAfFB6yEDwcct/Vs=
+		LQGmRmds4W31GEw56f/QBGGN2YY=
+		</data>
+		<key>Modules/SuperViewOneSignal.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		TlufJie4JGF8RXfDKH2w+4B0BvI=
+		</data>
+		<key>Modules/SuperViewOneSignal.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		N9xYigmmF2KCCIjmzw3l88MqrEg=
 		</data>
 		<key>Modules/SuperViewOneSignal.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9DhT8RxzcjvN6JKBmO0doSaqoYQ=
+		7tEI194G91W5iQ39gKaOqRvM79w=
 		</data>
 		<key>Modules/SuperViewOneSignal.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		URNeIG50HYzgsWzgelrbN0sOK7E=
+		N9xYigmmF2KCCIjmzw3l88MqrEg=
 		</data>
 		<key>Modules/SuperViewOneSignal.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+5TDeTdd6/ZiLTBwDWbRKZBV+G8=
+		yWjkhsWZALEAzVrReXrRI88Bs6A=
 		</data>
-		<key>Modules/SuperViewOneSignal.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9DhT8RxzcjvN6JKBmO0doSaqoYQ=
+		TlufJie4JGF8RXfDKH2w+4B0BvI=
 		</data>
-		<key>Modules/SuperViewOneSignal.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		URNeIG50HYzgsWzgelrbN0sOK7E=
-		</data>
-		<key>Modules/SuperViewOneSignal.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		+5TDeTdd6/ZiLTBwDWbRKZBV+G8=
+		VLGXGO5HoFFgwUn5+gN9WQUMjOs=
 		</data>
 		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		BqtLnCG8UJ8WDbu35V0jMrz5FFs=
+		j+6D/lTgfQWqRMf9NsdCVj22nQs=
 		</data>
 		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MnxDPNcOZJ0jGFU82RHVQaUyQzc=
+		VLGXGO5HoFFgwUn5+gN9WQUMjOs=
 		</data>
 		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eeFPE6FTarW4XSeUJPGMehx0fqs=
-		</data>
-		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		BqtLnCG8UJ8WDbu35V0jMrz5FFs=
-		</data>
-		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		MnxDPNcOZJ0jGFU82RHVQaUyQzc=
-		</data>
-		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		eeFPE6FTarW4XSeUJPGMehx0fqs=
+		yuiDoAwppeyTh6JLjWcAdfRCFAo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		vhX4013Ge86WQnv5/GJaJ3xmTXY=
+		1HvRz8KI3yf+D9xGT/+haDPBW9s=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LdbZf1CRcEQ/v+R418Cj1mucVucn/xFctAlM39/PrH0=
+			zU8k1HGnO4i7BqVlhUZNqSSOO8NbTB/7M6ax4+kK7S8=
 			</data>
 		</dict>
 		<key>Headers/SuperViewOneSignal.h</key>
@@ -85,95 +77,81 @@
 			wXzXnb2ux8XECkAtFfAfOa/5721P8qvk+uu1kAfrWRc=
 			</data>
 		</dict>
+		<key>Modules/SuperViewOneSignal.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			edS/9jMOUgb9TOEpBMtixkwRj2UepZzRMwqr6tG9QDI=
+			</data>
+		</dict>
+		<key>Modules/SuperViewOneSignal.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OyCL2ZooiwfMSzwleg2+Kjw4Ekf2aHjgriNaDkpK0YE=
+			</data>
+		</dict>
 		<key>Modules/SuperViewOneSignal.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AiXrARdW9b3vDlp4LocNijmThR90EKcFAC+TtLiksvA=
+			Tj3S67yKXOOgh4oIjR49gySCz3T3i9o07r+nTaAv6kw=
 			</data>
 		</dict>
 		<key>Modules/SuperViewOneSignal.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YMwmDiW+U3/VrI9SSnrowlkNQo0PePY3OgPLKgYm8NE=
+			OyCL2ZooiwfMSzwleg2+Kjw4Ekf2aHjgriNaDkpK0YE=
 			</data>
 		</dict>
 		<key>Modules/SuperViewOneSignal.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/5CVVjPytyzCaWsFIK9RTornmUJoZcESyc62G6+zNeg=
+			rFn+ulF8zUj3epsgJ+pJ1Ufe0OIIs2wOQlgfpxGzn0U=
 			</data>
 		</dict>
-		<key>Modules/SuperViewOneSignal.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AiXrARdW9b3vDlp4LocNijmThR90EKcFAC+TtLiksvA=
+			edS/9jMOUgb9TOEpBMtixkwRj2UepZzRMwqr6tG9QDI=
 			</data>
 		</dict>
-		<key>Modules/SuperViewOneSignal.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YMwmDiW+U3/VrI9SSnrowlkNQo0PePY3OgPLKgYm8NE=
-			</data>
-		</dict>
-		<key>Modules/SuperViewOneSignal.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/5CVVjPytyzCaWsFIK9RTornmUJoZcESyc62G6+zNeg=
+			7uh1oRBQ9bFgzhNo2GpAmric7ErfE9VHLKbxx6tkMxA=
 			</data>
 		</dict>
 		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l8DiLl4+Zs2RUO5SjhqqJTMcZWo/RVu8047HZl2hmsI=
+			pzR5JoCvOkdVuTUybvqSJC6XhVkH7E4F2vshwmGe3mU=
 			</data>
 		</dict>
 		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tV0aLIJyhY0Olr2VIa1Zdv6Q14sud4JBUF815q55D2I=
+			7uh1oRBQ9bFgzhNo2GpAmric7ErfE9VHLKbxx6tkMxA=
 			</data>
 		</dict>
 		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4WN/xAUaOTWlW2V1sFG2DqKrsWmyKfx3oD1WB7kb18U=
-			</data>
-		</dict>
-		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			l8DiLl4+Zs2RUO5SjhqqJTMcZWo/RVu8047HZl2hmsI=
-			</data>
-		</dict>
-		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tV0aLIJyhY0Olr2VIa1Zdv6Q14sud4JBUF815q55D2I=
-			</data>
-		</dict>
-		<key>Modules/SuperViewOneSignal.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4WN/xAUaOTWlW2V1sFG2DqKrsWmyKfx3oD1WB7kb18U=
+			GGj2qyh0z8Cp57jK2Q18NDWbXmDjR1KeGVbyqeY+aM4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JRuTC+fmFOsxmrURMq23EfBuc7GcXi8ZdkstTeq37yg=
+			wtAhZcLbF/X5TFtIzH4nGwtcnPe70NELvtvfzt63PP8=
 			</data>
 		</dict>
 	</dict>

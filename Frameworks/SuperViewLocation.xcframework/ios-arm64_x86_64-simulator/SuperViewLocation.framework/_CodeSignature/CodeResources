@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SuperViewLocation-Swift.h</key>
 		<data>
-		PeLRIQThRwHtOjHoo0wiCE+tIko=
+		qJmLvgT2KuIqmRUZ3x3EXBJ3y3I=
 		</data>
 		<key>Headers/SuperViewLocation.h</key>
 		<data>
@@ -14,59 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zLc0tvPhkTf29DTwwMqvKcMlqUw=
+		U2nibK4hJ5YanBi9ma8dce2Cl5M=
+		</data>
+		<key>Modules/SuperViewLocation.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		G9tyV3F49YSnAEHQD5q23QAKMtI=
+		</data>
+		<key>Modules/SuperViewLocation.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		XtlnQkdo/bXlKazUedEuxW9cVEs=
 		</data>
 		<key>Modules/SuperViewLocation.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Ps1CQMm8zrn6P7vLT/TqfNklbF0=
+		IDnfPtP9sGz4F+RT+xMUzApxuX0=
 		</data>
 		<key>Modules/SuperViewLocation.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KW4MBePbhTjfZoTzS6Wh+N1s4+k=
+		XtlnQkdo/bXlKazUedEuxW9cVEs=
 		</data>
 		<key>Modules/SuperViewLocation.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iQMkI1nT8cVwg6Ei9rpDNrPP3IQ=
+		cZJqjgzXOBwgnkOYvHpVFuc14gw=
 		</data>
-		<key>Modules/SuperViewLocation.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/SuperViewLocation.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ps1CQMm8zrn6P7vLT/TqfNklbF0=
+		G9tyV3F49YSnAEHQD5q23QAKMtI=
 		</data>
-		<key>Modules/SuperViewLocation.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/SuperViewLocation.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KW4MBePbhTjfZoTzS6Wh+N1s4+k=
-		</data>
-		<key>Modules/SuperViewLocation.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		iQMkI1nT8cVwg6Ei9rpDNrPP3IQ=
+		7kDTxFuNzJknDhsIqpVZU2DBDsM=
 		</data>
 		<key>Modules/SuperViewLocation.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		M/ddImEi4OtCcc1YPCBne0WxvHE=
+		0XhP+CviKkOoCoAGxSf34Bu3rM4=
 		</data>
 		<key>Modules/SuperViewLocation.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FRgQjrbzj7LaxiyLWIhqbgtArvo=
+		7kDTxFuNzJknDhsIqpVZU2DBDsM=
 		</data>
 		<key>Modules/SuperViewLocation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zJl9Iq56h8iIFa22fyOsnUzIoT8=
-		</data>
-		<key>Modules/SuperViewLocation.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		M/ddImEi4OtCcc1YPCBne0WxvHE=
-		</data>
-		<key>Modules/SuperViewLocation.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		FRgQjrbzj7LaxiyLWIhqbgtArvo=
-		</data>
-		<key>Modules/SuperViewLocation.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		zJl9Iq56h8iIFa22fyOsnUzIoT8=
+		G99LHrpwYPfuqF8OIFIht3Y2Zxk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		eUZNmu0l16hV8yM646O/Jae9OnQ=
+		355jS87TSJ/vtxGyGEEE84RF6eo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5emg1LJ4gf4rHMqhva2VqA1qEgH9/x+oePSVeKfX9eM=
+			tvpkQbGGvjVbWDZl6Gs6fY+T1neoJS0/q22tJD0lmps=
 			</data>
 		</dict>
 		<key>Headers/SuperViewLocation.h</key>
@@ -85,95 +77,81 @@
 			qdNe52yArFvspn06t3bOQRnlmwN5+b0YrC9UmRws1Ik=
 			</data>
 		</dict>
+		<key>Modules/SuperViewLocation.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6AgGU/BA+w65uEgpb5gi/ZbarlNwTaP9XR4ikLAAWa0=
+			</data>
+		</dict>
+		<key>Modules/SuperViewLocation.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ma+wjDt2lu9RWfMPMcwejccUAlQz81MupdSrG9B+FlI=
+			</data>
+		</dict>
 		<key>Modules/SuperViewLocation.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4NaymCBlprLn6TC3ySBueJJxfPkY+wTwyf6vmSbc+Kk=
+			IuFUFD1zJV6RFX3LboDn3PifEzTyLqagFmdT5NhvadI=
 			</data>
 		</dict>
 		<key>Modules/SuperViewLocation.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wZRG+usIXWQH2oSz3ie525n+qxy6f4j5MNfHhw5WTyA=
+			ma+wjDt2lu9RWfMPMcwejccUAlQz81MupdSrG9B+FlI=
 			</data>
 		</dict>
 		<key>Modules/SuperViewLocation.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NhYZDgRGK8Uqxmsyuh4YT+QHAaeGjmatyTgVLxHrGic=
+			aInFIB8Ht41uuHNdca9x++F0W9b3HCz1UXYP9yUnis4=
 			</data>
 		</dict>
-		<key>Modules/SuperViewLocation.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/SuperViewLocation.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4NaymCBlprLn6TC3ySBueJJxfPkY+wTwyf6vmSbc+Kk=
+			6AgGU/BA+w65uEgpb5gi/ZbarlNwTaP9XR4ikLAAWa0=
 			</data>
 		</dict>
-		<key>Modules/SuperViewLocation.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/SuperViewLocation.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wZRG+usIXWQH2oSz3ie525n+qxy6f4j5MNfHhw5WTyA=
-			</data>
-		</dict>
-		<key>Modules/SuperViewLocation.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NhYZDgRGK8Uqxmsyuh4YT+QHAaeGjmatyTgVLxHrGic=
+			/93jTCFeJ0L4eUS+WDli9tK/l/IIJ4JY2UMI5LZ5Vcs=
 			</data>
 		</dict>
 		<key>Modules/SuperViewLocation.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uqr6/KYp07MRoDgE0Z8DJKoVGUyMS3yB/P3JVkgEpTo=
+			p8rUnlQk/fJO3RNb/afB7MmvNSrBaiaT+KmXKRQW6mg=
 			</data>
 		</dict>
 		<key>Modules/SuperViewLocation.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K9QU09kL/qqV7zi8togXzkTMTMkXjDjIW/fvaSrs79I=
+			/93jTCFeJ0L4eUS+WDli9tK/l/IIJ4JY2UMI5LZ5Vcs=
 			</data>
 		</dict>
 		<key>Modules/SuperViewLocation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1dWIwv3vOwEgk2U98uL8KC7mvtn+hDYz6rqdUhUkqKQ=
-			</data>
-		</dict>
-		<key>Modules/SuperViewLocation.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Uqr6/KYp07MRoDgE0Z8DJKoVGUyMS3yB/P3JVkgEpTo=
-			</data>
-		</dict>
-		<key>Modules/SuperViewLocation.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			K9QU09kL/qqV7zi8togXzkTMTMkXjDjIW/fvaSrs79I=
-			</data>
-		</dict>
-		<key>Modules/SuperViewLocation.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1dWIwv3vOwEgk2U98uL8KC7mvtn+hDYz6rqdUhUkqKQ=
+			RW8Sl5eapANmQRV6yBPBJkkVoDofCxrdxanS5NkuYPc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VnmGDpfvhc00xtMGzsX/gO5VYyG+5zyO0Z7V6hlTwSg=
+			stZrU55euXL3oKNjuMwiR4PlGUGFNqY6zig9t3cg23Y=
 			</data>
 		</dict>
 	</dict>

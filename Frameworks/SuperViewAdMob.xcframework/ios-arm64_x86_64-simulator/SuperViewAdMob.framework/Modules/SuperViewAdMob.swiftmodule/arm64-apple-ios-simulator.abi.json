@@ -1,0 +1,444 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SuperViewAdMob",
+    "printedName": "SuperViewAdMob",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewAdMob",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SuperViewCore",
+        "printedName": "SuperViewCore",
+        "declKind": "Import",
+        "moduleName": "SuperViewAdMob"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewAdMob",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SuperViewCore",
+        "printedName": "SuperViewCore",
+        "declKind": "Import",
+        "moduleName": "SuperViewAdMob"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "SuperViewAdMob"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewAdMob",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SuperViewCore",
+        "printedName": "SuperViewCore",
+        "declKind": "Import",
+        "moduleName": "SuperViewAdMob"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "SuperViewAdMob"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SuperView",
+        "printedName": "SuperView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configureAdMob",
+            "printedName": "configureAdMob()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewAdMob@SuperViewCore@objc(cs)SuperView(cm)configureAdMob",
+            "mangledName": "$s13SuperViewCore0aB0C0aB5AdMobE09configuredE0yyFZ",
+            "moduleName": "SuperViewAdMob",
+            "static": true,
+            "intro_iOS": "15.6",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SuperViewCore@objc(cs)SuperView",
+        "mangledName": "$s13SuperViewCore0aB0C",
+        "moduleName": "SuperViewCore",
+        "declAttributes": [
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SuperWebViewController",
+        "printedName": "SuperWebViewController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "bannerViewDidReceiveAd",
+            "printedName": "bannerViewDidReceiveAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADBannerView",
+                "printedName": "GoogleMobileAds.GADBannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewAdMob@SuperViewCore@objc(cs)SuperWebViewController(im)bannerViewDidReceiveAd:",
+            "mangledName": "$s13SuperViewCore0a3WebB10ControllerC0aB5AdMobE06bannerb10DidReceiveF0yySo09GADBannerB0CF",
+            "moduleName": "SuperViewAdMob",
+            "objc_name": "bannerViewDidReceiveAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ad",
+            "printedName": "ad(_:didFailToPresentFullScreenContentWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewAdMob@SuperViewCore@objc(cs)SuperWebViewController(im)ad:didFailToPresentFullScreenContentWithError:",
+            "mangledName": "$s13SuperViewCore0a3WebB10ControllerC0aB5AdMobE2ad_42didFailToPresentFullScreenContentWithErrorySo07GADFulln10PresentingF0_p_s0Q0_ptF",
+            "moduleName": "SuperViewAdMob",
+            "objc_name": "ad:didFailToPresentFullScreenContentWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adWillPresentFullScreenContent",
+            "printedName": "adWillPresentFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewAdMob@SuperViewCore@objc(cs)SuperWebViewController(im)adWillPresentFullScreenContent:",
+            "mangledName": "$s13SuperViewCore0a3WebB10ControllerC0aB5AdMobE30adWillPresentFullScreenContentyySo07GADFulll10PresentingF0_pF",
+            "moduleName": "SuperViewAdMob",
+            "objc_name": "adWillPresentFullScreenContent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidDismissFullScreenContent",
+            "printedName": "adDidDismissFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADFullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewAdMob@SuperViewCore@objc(cs)SuperWebViewController(im)adDidDismissFullScreenContent:",
+            "mangledName": "$s13SuperViewCore0a3WebB10ControllerC0aB5AdMobE29adDidDismissFullScreenContentyySo07GADFulll10PresentingF0_pF",
+            "moduleName": "SuperViewAdMob",
+            "objc_name": "adDidDismissFullScreenContent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SuperViewCore@objc(cs)SuperWebViewController",
+        "mangledName": "$s13SuperViewCore0a3WebB10ControllerC",
+        "moduleName": "SuperViewCore",
+        "isOpen": true,
+        "declAttributes": [
+          "Preconcurrency",
+          "ObjCMembers",
+          "Custom",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "NVActivityIndicatorViewable",
+            "printedName": "NVActivityIndicatorViewable",
+            "usr": "s:13SuperViewCore27NVActivityIndicatorViewableP",
+            "mangledName": "$s13SuperViewCore27NVActivityIndicatorViewableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SuperToolbarDelegate",
+            "printedName": "SuperToolbarDelegate",
+            "usr": "s:13SuperViewCore0A15ToolbarDelegateP",
+            "mangledName": "$s13SuperViewCore0A15ToolbarDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SuperWebViewDelegate",
+            "printedName": "SuperWebViewDelegate",
+            "usr": "s:13SuperViewCore0a3WebB8DelegateP",
+            "mangledName": "$s13SuperViewCore0a3WebB8DelegateP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

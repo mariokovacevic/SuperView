@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ak2hOXyZSh/L33xn/Pyvh8YZlPc=
+		/wFscJfO35GXrXS+nMWG6aR0r+s=
 		</data>
 		<key>CardScan.storyboardc/Info.plist</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>CardScan.storyboardc/RWC-EC-Zxy-view-dia-FZ-zQY.nib</key>
 		<data>
-		6yAJhHFc62QBUbTVM/sUhpA/K88=
+		B2zZGstZz+hFsZ/pONMcXHRhRFk=
 		</data>
 		<key>CardScan.storyboardc/scanCardViewController.nib</key>
 		<data>
-		ZmSMTpobm9IpYqVlhYLeSG4xJDE=
+		qojNyofcrrlG3vwfFmn/B/Jmn8s=
 		</data>
 		<key>FindFour.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		o/+t6nQxhKAfMe5GbA+c9ZdmfX4=
+		EnFLTOz/vE+vQihXIogq3qk3GyQ=
 		</data>
 		<key>FindFour.mlmodelc/coremldata.bin</key>
 		<data>
-		7DrRAOv51Dd/hyhYsrcooN55++k=
+		I6YWGbSGR/mRLQOCGSQ3cCpj6yU=
 		</data>
 		<key>FindFour.mlmodelc/metadata.json</key>
 		<data>
-		HAJqytbfB0a46ze9O5NN9XgWu3c=
+		zja0h57IkIljV8gRBchiqOo5TPA=
 		</data>
 		<key>FindFour.mlmodelc/model.espresso.net</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>FourRecognize.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		WH1pCXWMuc39iczZS1BXlEsg89w=
+		SKlsKLPU46I89BA/UAp3HT3K6XA=
 		</data>
 		<key>FourRecognize.mlmodelc/coremldata.bin</key>
 		<data>
-		9VBCiJb65nD0re10EC3/0ZC82CU=
+		3X8/aAN/7nJc5Z+/BDaUMOD60fg=
 		</data>
 		<key>FourRecognize.mlmodelc/metadata.json</key>
 		<data>
-		jRgvtqXne3G4JVJC3eI3/DIjmE8=
+		YLU6REt03kU7PsBYnU8vYFEdEvs=
 		</data>
 		<key>FourRecognize.mlmodelc/model.espresso.net</key>
 		<data>
@@ -86,59 +86,51 @@
 		</data>
 		<key>Headers/SuperViewCardScan-Swift.h</key>
 		<data>
-		xKpXo2mzHROCNA1J70zvb4fdVZY=
+		PdQokbDORs4jcWCPEkO/JPmPXXU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		65JYP3JKu0RjIKgS3veznw3LINY=
+		/XraFo4dKKp7wW2aK1C+Ns6H+Mc=
+		</data>
+		<key>Modules/SuperViewCardScan.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		KgDVmlAMUo+H/52UeigSza4AYVk=
+		</data>
+		<key>Modules/SuperViewCardScan.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		6PrB3xsb523rvYauYG3ijOfrNsQ=
 		</data>
 		<key>Modules/SuperViewCardScan.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HhYYQUkqzQsNoEsQMJt7VTyk5PI=
+		WysKX/Z7KuGCacq5mk+kGDJI3Qo=
 		</data>
 		<key>Modules/SuperViewCardScan.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		drVtDLJjJjEDvpi9nzm6FqHMBZM=
+		6PrB3xsb523rvYauYG3ijOfrNsQ=
 		</data>
 		<key>Modules/SuperViewCardScan.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		e+l53lnYipYrkH0v55gdvzw64VQ=
+		DsxgbdzpM2us9KX2fAfzRMEHxcs=
 		</data>
-		<key>Modules/SuperViewCardScan.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/SuperViewCardScan.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		HhYYQUkqzQsNoEsQMJt7VTyk5PI=
+		KgDVmlAMUo+H/52UeigSza4AYVk=
 		</data>
-		<key>Modules/SuperViewCardScan.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/SuperViewCardScan.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		drVtDLJjJjEDvpi9nzm6FqHMBZM=
-		</data>
-		<key>Modules/SuperViewCardScan.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		e+l53lnYipYrkH0v55gdvzw64VQ=
+		rMxTFVA+6TsEcnC+e0GfdR5OkJI=
 		</data>
 		<key>Modules/SuperViewCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		bsQn6WoPavOAG1IAmKfVyhaQahg=
+		pcYNaDO9OBpxG0Nfg7SuEOxmJfE=
 		</data>
 		<key>Modules/SuperViewCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DMaWFyd45PNOgBFS94w7D06vZgU=
+		rMxTFVA+6TsEcnC+e0GfdR5OkJI=
 		</data>
 		<key>Modules/SuperViewCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MAKhpozg3Q7+4+scCEreiC56hb4=
-		</data>
-		<key>Modules/SuperViewCardScan.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		bsQn6WoPavOAG1IAmKfVyhaQahg=
-		</data>
-		<key>Modules/SuperViewCardScan.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		DMaWFyd45PNOgBFS94w7D06vZgU=
-		</data>
-		<key>Modules/SuperViewCardScan.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		MAKhpozg3Q7+4+scCEreiC56hb4=
+		k64TLVWrM/fHCTmywW0XZwU4AsI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -151,7 +143,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cpJv9+dhWREg8/+rxle4sA/drudggPjwhg8mL7O1/SQ=
+			yYzCFncT7WsfLVueeeq8kaBLDr/TXmVhMwHIVainSKI=
 			</data>
 		</dict>
 		<key>CardScan.storyboardc/Info.plist</key>
@@ -165,35 +157,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3UNcqLx1rruzquNzJjW56nxRBV1yfaXvyViyTl/EAY4=
+			wyi5hq/+XN+5BMcEu81d4e8dhSvDik6m+tCov0Ld0d4=
 			</data>
 		</dict>
 		<key>CardScan.storyboardc/scanCardViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D3Iev/AJr/OWR142yEvuQmea4CqI2tUJNJz+U5iBB7E=
+			wUUAc3eWKji6HXa3QB0hLb8aVj2vS+AqJ+i7EJfpPyk=
 			</data>
 		</dict>
 		<key>FindFour.mlmodelc/analytics/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x2hWdOMdr0V9Sz08tXp/2a3J7PegRdVDpD8u2YCl8Ww=
+			lsVl68HjXTl4k9skVE3mFG67onSScbG9SIQFizFf6vg=
 			</data>
 		</dict>
 		<key>FindFour.mlmodelc/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CsYnTe6k7Jp284Hpv3Fz5Qlbk3+jwd4q/LjZfngIPS0=
+			j3Ei1cTAF9TFs0j81KwP2OiZ4RJ/ytrt/WedGEuFkL8=
 			</data>
 		</dict>
 		<key>FindFour.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tOGXhqYd7QCUi31qIzbL7Tx9sa7Wy1m7n50ym25xQBg=
+			snV3eCBqGnI9UAO0XqAWY3VJ5YTO20HnR/VtmBDqy0s=
 			</data>
 		</dict>
 		<key>FindFour.mlmodelc/model.espresso.net</key>
@@ -235,21 +227,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ef7szPdU5mOEbqvicOfCtcxN04Vk7G1e9IG7FLe0R2g=
+			XVgQXssMvT6PjY3HSqLdU9sQsWFa+60C4Wm8NS1kXt0=
 			</data>
 		</dict>
 		<key>FourRecognize.mlmodelc/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b1y8vstp52S1OrprWEi1k6J1Himgsyy3sJxxYGssAHI=
+			6tEGbFmthX1q1ditADpPHdlPlrWe+J0O5SPb/4gChhk=
 			</data>
 		</dict>
 		<key>FourRecognize.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+qDkFMl1BvQj/nBtrwZlvmxSyyF4ffPc5cwRWWuMjMg=
+			1E2Kx1zxXCocm78yw9yPHReWef5sG44qcTN3TpyxBBQ=
 			</data>
 		</dict>
 		<key>FourRecognize.mlmodelc/model.espresso.net</key>
@@ -291,91 +283,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dNm4fFeNZDe8agH6zV6SMrQ0p6gpkYSEh7lgGg3keU8=
+			BukDIj+wGOt/AmuV1KLw/JXSapUsIcZItbn9WoE6cEY=
+			</data>
+		</dict>
+		<key>Modules/SuperViewCardScan.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B7mKBzECTMH6VIkg8qwZOJLZOyoQ0hlOJG4O02KHDKU=
+			</data>
+		</dict>
+		<key>Modules/SuperViewCardScan.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cQKQUgFPhu6Wf1KZwPsmmGmGe7hOr+EWIsq7DbalEHo=
 			</data>
 		</dict>
 		<key>Modules/SuperViewCardScan.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vg1cDZTh17XyT7XH9+xjTK+knInoxJFAirVIAhvfamE=
+			ph7fb0gdujkg2vWKyngL3vO5PuptB8BfgaPSScEe3Cw=
 			</data>
 		</dict>
 		<key>Modules/SuperViewCardScan.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UA1tWnaAiQwPyDFqgC20y5KStgynisX3eeGDQTqiDis=
+			cQKQUgFPhu6Wf1KZwPsmmGmGe7hOr+EWIsq7DbalEHo=
 			</data>
 		</dict>
 		<key>Modules/SuperViewCardScan.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nxgLH6sTack2P4NdgG1f8KiQroeWnp9WvtPeXgm6Jjs=
+			7Mo5GjblrlbFxz+mvbKhno+aQTNscS7i8vKRZUEP27Y=
 			</data>
 		</dict>
-		<key>Modules/SuperViewCardScan.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/SuperViewCardScan.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vg1cDZTh17XyT7XH9+xjTK+knInoxJFAirVIAhvfamE=
+			B7mKBzECTMH6VIkg8qwZOJLZOyoQ0hlOJG4O02KHDKU=
 			</data>
 		</dict>
-		<key>Modules/SuperViewCardScan.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/SuperViewCardScan.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UA1tWnaAiQwPyDFqgC20y5KStgynisX3eeGDQTqiDis=
-			</data>
-		</dict>
-		<key>Modules/SuperViewCardScan.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nxgLH6sTack2P4NdgG1f8KiQroeWnp9WvtPeXgm6Jjs=
+			VLvg9OmfXKSjtOXflLSxsYucXRAZJt4+YH7NkKUjMF8=
 			</data>
 		</dict>
 		<key>Modules/SuperViewCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EovNCdwKMMugPcyBngyypUSSeLM2zVo5TnnBF1wg5zo=
+			lzGXPsZk2kphlUUUaVU8EgWWizLpxO7VPsMcBeqcZlQ=
 			</data>
 		</dict>
 		<key>Modules/SuperViewCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Eia/h5iGY4rpgPwIAANGi0gIwwwMwjjzgUWXMxNWuqQ=
+			VLvg9OmfXKSjtOXflLSxsYucXRAZJt4+YH7NkKUjMF8=
 			</data>
 		</dict>
 		<key>Modules/SuperViewCardScan.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PkVT894/SbeCAbq50qfifPy6mRvI+W71+hZqDruajXw=
-			</data>
-		</dict>
-		<key>Modules/SuperViewCardScan.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EovNCdwKMMugPcyBngyypUSSeLM2zVo5TnnBF1wg5zo=
-			</data>
-		</dict>
-		<key>Modules/SuperViewCardScan.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Eia/h5iGY4rpgPwIAANGi0gIwwwMwjjzgUWXMxNWuqQ=
-			</data>
-		</dict>
-		<key>Modules/SuperViewCardScan.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PkVT894/SbeCAbq50qfifPy6mRvI+W71+hZqDruajXw=
+			ccLMgAvA/wuSzyy5Ixm7WEdst6BQj4zzeI0f3qBQeXo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

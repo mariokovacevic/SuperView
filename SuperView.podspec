@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'SuperView'
-  s.version      = '1.3.4'
+  s.version      = '1.4.0'
   s.summary      = 'SuperView allows you to wrap your website in a super simple iOS app.'
   s.description  = 'SuperView iOS SDK provides a library that makes it easy for an iOS developer to wrap his website in a super simple iOS app.'
   s.homepage     = 'https://github.com/brommko/SuperView'
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   }
   s.weak_framework = 'UIKit'
   s.default_subspec = 'Core'
-  s.swift_versions = '5.5.1'
+  s.swift_versions = '6.0.3'
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   s.subspec 'Core' do |core|
     core.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
@@ -44,15 +44,14 @@ Pod::Spec.new do |s|
   s.subspec 'AdMob' do |admob|
     admob.ios.vendored_frameworks = 'Frameworks/SuperViewAdMob.xcframework'
     admob.dependency 'SuperView/Core'
-    admob.dependency 'Google-Mobile-Ads-SDK', '8.13.0'
-    admob.dependency 'Firebase', '8.10.0'
+    admob.dependency 'Google-Mobile-Ads-SDK', '11.13.0'
   end
 
   s.subspec 'Firebase' do |firebase|
     firebase.ios.vendored_frameworks = 'Frameworks/SuperViewFirebase.xcframework'
     firebase.dependency 'SuperView/Core'
-    firebase.dependency 'Firebase', '8.10.0'
-    firebase.dependency 'Firebase/Messaging', '8.10.0'
+    firebase.dependency 'Firebase', '11.6.0'
+    firebase.dependency 'Firebase/Messaging', '11.6.0'
   end
 
   s.subspec 'Facebook' do |facebook|
