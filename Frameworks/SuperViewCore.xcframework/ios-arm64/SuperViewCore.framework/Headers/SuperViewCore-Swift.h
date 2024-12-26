@@ -416,8 +416,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (void)configureWithApplication:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions plistURL:(NSURL * _Nullable)plistURL;
 + (void)show;
 + (BOOL)handleURLWithUrl:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options;
-/// Don’t try to swizzle this method!
-- (void)handleFacebookURLWithUrl:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options;
 - (void)openURLWithUrl:(NSURL * _Nonnull)url;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSBundle * _Nonnull bundle;)
 + (NSBundle * _Nonnull)bundle SWIFT_WARN_UNUSED_RESULT;
@@ -445,6 +443,11 @@ SWIFT_CLASS("_TtC13SuperViewCore12SuperWebView")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface SuperWebView (SWIFT_EXTENSION(SuperViewCore))
+- (void)downloadDidFinishWithLocation:(NSURL * _Nonnull)url;
 @end
 
 @class UNUserNotificationCenter;
@@ -508,8 +511,6 @@ SWIFT_CLASS("_TtC13SuperViewCore12SuperWebView")
 /// Don’t try to swizzle this method!
 - (void)setupCardScanBridge;
 /// Don’t try to swizzle this method!
-- (void)setupFacebookBridge;
-/// Don’t try to swizzle this method!
 - (void)setupQRBridge;
 /// Don’t try to swizzle this method!
 - (void)setupFirebaseBridge;
@@ -533,15 +534,15 @@ SWIFT_CLASS("_TtC13SuperViewCore22SuperWebViewController")
 @end
 
 
-
-
-
 @class UIContextMenuInteraction;
 @class UIContextMenuConfiguration;
 
 @interface SuperWebViewController (SWIFT_EXTENSION(SuperViewCore)) <UIContextMenuInteractionDelegate>
 - (UIContextMenuConfiguration * _Nullable)contextMenuInteraction:(UIContextMenuInteraction * _Nonnull)interaction configurationForMenuAtLocation:(CGPoint)location SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
+
 
 
 @class QLPreviewController;
@@ -556,8 +557,6 @@ SWIFT_CLASS("_TtC13SuperViewCore22SuperWebViewController")
 @interface SuperWebViewController (SWIFT_EXTENSION(SuperViewCore))
 /// Don’t try to swizzle this method!
 - (void)setupAds;
-/// Don’t try to swizzle this method!
-- (void)setupFacebookAds;
 /// Don’t try to swizzle this method!
 - (void)presentInterstitialAd;
 /// Don’t try to swizzle this method!
@@ -598,6 +597,30 @@ SWIFT_CLASS("_TtC13SuperViewCore22SuperWebViewController")
 
 
 
+
+
+SWIFT_CLASS("_TtC13SuperViewCore17WKDownloadManager")
+@interface WKDownloadManager : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class WKDownload;
+@class NSURLResponse;
+@class NSData;
+
+@interface WKDownloadManager (SWIFT_EXTENSION(SuperViewCore)) <WKDownloadDelegate>
+- (void)download:(WKDownload * _Nonnull)download decideDestinationUsingResponse:(NSURLResponse * _Nonnull)response suggestedFilename:(NSString * _Nonnull)suggestedFilename completionHandler:(void (^ _Nonnull)(NSURL * _Nullable))completionHandler;
+- (void)download:(WKDownload * _Nonnull)download didFailWithError:(NSError * _Nonnull)error resumeData:(NSData * _Nullable)resumeData;
+- (void)downloadDidFinish:(WKDownload * _Nonnull)download;
+@end
+
+
+@interface WKDownloadManager (SWIFT_EXTENSION(SuperViewCore)) <WKNavigationDelegate>
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))completionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse decisionHandler:(void (^ _Nonnull)(WKNavigationResponsePolicy))completionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView navigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse didBecomeDownload:(WKDownload * _Nonnull)download;
+@end
 
 
 

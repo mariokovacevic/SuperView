@@ -122,6 +122,9 @@ public struct WebViewOptions : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect, configuration: WebKit.WKWebViewConfiguration)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
+extension SuperViewCore.SuperWebView : SuperViewCore.WKDownloadManagerDelegate {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func downloadDidFinish(location url: Foundation.URL)
+}
 extension SuperViewCore.SuperWebView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func setupBridge()
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func setupLocation()
@@ -129,7 +132,6 @@ extension SuperViewCore.SuperWebView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func setupAdMobBridge()
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func setupOneSignalBridge()
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func setupCardScanBridge()
-  @objc @_Concurrency.MainActor @preconcurrency dynamic open func setupFacebookBridge()
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func setupQRBridge()
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func setupFirebaseBridge()
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func setupCustomBridge()
@@ -225,7 +227,6 @@ extension SuperViewCore.SuperWebViewController : SuperViewCore.SuperWebViewDeleg
 }
 extension SuperViewCore.SuperWebViewController {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func setupAds()
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func setupFacebookAds()
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func presentInterstitialAd()
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func presentRewardBasedVideoAd()
 }
@@ -260,7 +261,6 @@ public struct InAppPurchaseOptions : Swift.Codable {
 public struct SuperViewOptions : Swift.Codable {
   public var activityIndicator: SuperViewCore.ActivityIndicatorOptions!
   public var adMob: SuperViewCore.AdMobOptions!
-  public var facebook: SuperViewCore.FacebookOptions!
   public var font: SuperViewCore.CustomFontOptions!
   public var gps: SuperViewCore.GPSOptions!
   public var inAppPurchase: SuperViewCore.InAppPurchaseOptions!
@@ -270,7 +270,7 @@ public struct SuperViewOptions : Swift.Codable {
   public var sideMenu: SuperViewCore.SideMenuOptions!
   public var toolbar: SuperViewCore.ToolbarOptions!
   public var webView: SuperViewCore.WebViewOptions!
-  public init(activityIndicator: SuperViewCore.ActivityIndicatorOptions = ActivityIndicatorOptions(), adMob: SuperViewCore.AdMobOptions = AdMobOptions(), facebook: SuperViewCore.FacebookOptions = FacebookOptions(), font: SuperViewCore.CustomFontOptions = CustomFontOptions(), gps: SuperViewCore.GPSOptions = GPSOptions(), inAppPurchase: SuperViewCore.InAppPurchaseOptions = InAppPurchaseOptions(), navigationBar: SuperViewCore.NavigationBarOptions = NavigationBarOptions(), oneSignal: SuperViewCore.OneSignalOptions = OneSignalOptions(), rateMyApp: SuperViewCore.RateMyAppOptions = RateMyAppOptions(), sideMenu: SuperViewCore.SideMenuOptions = SideMenuOptions(), toolbar: SuperViewCore.ToolbarOptions = ToolbarOptions(), webView: SuperViewCore.WebViewOptions = WebViewOptions())
+  public init(activityIndicator: SuperViewCore.ActivityIndicatorOptions = ActivityIndicatorOptions(), adMob: SuperViewCore.AdMobOptions = AdMobOptions(), font: SuperViewCore.CustomFontOptions = CustomFontOptions(), gps: SuperViewCore.GPSOptions = GPSOptions(), inAppPurchase: SuperViewCore.InAppPurchaseOptions = InAppPurchaseOptions(), navigationBar: SuperViewCore.NavigationBarOptions = NavigationBarOptions(), oneSignal: SuperViewCore.OneSignalOptions = OneSignalOptions(), rateMyApp: SuperViewCore.RateMyAppOptions = RateMyAppOptions(), sideMenu: SuperViewCore.SideMenuOptions = SideMenuOptions(), toolbar: SuperViewCore.ToolbarOptions = ToolbarOptions(), webView: SuperViewCore.WebViewOptions = WebViewOptions())
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -382,7 +382,6 @@ public protocol SuperWebViewDelegate : AnyObject {
   @objc public static func show()
   @objc @discardableResult
   public static func handleURL(url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
-  @objc public func handleFacebookURL(url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:])
   @objc public func openURL(url: Foundation.URL)
   @objc public static var bundle: Foundation.Bundle {
     @objc get
@@ -404,29 +403,30 @@ public protocol SuperWebViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
-public protocol SelfAdMobAware : AnyObject {
-  static func awake()
+public protocol WKDownloadManagerDelegate : AnyObject {
+  func webView(_ webView: WebKit.WKWebView, decidePolicyFor url: Foundation.URL) -> Swift.Bool
+  func destinationUrlForFile(withName name: Swift.String) -> Foundation.URL?
+  func downloadDidFinish(location url: Foundation.URL)
+  func downloadDidFailed(withError error: any Swift.Error)
 }
-public protocol SelfCardIOAware : AnyObject {
-  static func awake()
+extension SuperViewCore.WKDownloadManagerDelegate {
+  public func webView(_ webView: WebKit.WKWebView, decidePolicyFor url: Foundation.URL) -> Swift.Bool
+  public func destinationUrlForFile(withName name: Swift.String) -> Foundation.URL?
+  public func downloadDidFailed(withError error: any Swift.Error)
 }
-public protocol SelfCardScanAware : AnyObject {
-  static func awake()
+@objc public class WKDownloadManager : ObjectiveC.NSObject {
+  public init(delegate: any SuperViewCore.WKDownloadManagerDelegate, supportedMimeTypes: [Swift.String])
+  @objc deinit
 }
-public protocol SelfFacebookAware : AnyObject {
-  static func awake()
+extension SuperViewCore.WKDownloadManager : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction) async -> WebKit.WKNavigationActionPolicy
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse) async -> WebKit.WKNavigationResponsePolicy
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, navigationResponse: WebKit.WKNavigationResponse, didBecome download: WebKit.WKDownload)
 }
-public protocol SelfLocationAware : AnyObject {
-  static func awake()
-}
-public protocol SelfOneSignalAware : AnyObject {
-  static func awake()
-}
-public protocol SelfScanQrAware : AnyObject {
-  static func awake()
-}
-public protocol SelfFirebaseAware : AnyObject {
-  static func awake()
+extension SuperViewCore.WKDownloadManager : WebKit.WKDownloadDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func download(_ download: WebKit.WKDownload, decideDestinationUsing response: Foundation.URLResponse, suggestedFilename: Swift.String) async -> Foundation.URL?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func download(_ download: WebKit.WKDownload, didFailWithError error: any Swift.Error, resumeData: Foundation.Data?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func downloadDidFinish(_ download: WebKit.WKDownload)
 }
 public protocol NVActivityIndicatorViewable {
 }
@@ -509,15 +509,6 @@ public struct CustomButton : Swift.Codable, Swift.Equatable {
   public init(from decoder: any Swift.Decoder) throws
   public init(title: Swift.String, url: Swift.String?) throws
   public static func == (a: SuperViewCore.CustomButton, b: SuperViewCore.CustomButton) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public struct FacebookOptions : Swift.Codable {
-  public var isEnabled: Swift.Bool
-  public var facebookID: Swift.String?
-  public var bannerPlacementID: Swift.String?
-  public var interstitialPlacementID: Swift.String?
-  public init(isEnabled: Swift.Bool? = false, facebookID: Swift.String? = nil, bannerPlacementID: Swift.String? = nil, interstitialPlacementID: Swift.String? = nil)
-  public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum NVActivityIndicatorType : Swift.Int {

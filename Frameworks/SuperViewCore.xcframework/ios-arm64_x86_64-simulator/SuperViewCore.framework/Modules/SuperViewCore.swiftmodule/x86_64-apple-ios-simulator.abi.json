@@ -5658,6 +5658,37 @@
           },
           {
             "kind": "Function",
+            "name": "downloadDidFinish",
+            "printedName": "downloadDidFinish(location:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewCore@objc(cs)SuperWebView(im)downloadDidFinishWithLocation:",
+            "mangledName": "$s13SuperViewCore0a3WebB0C17downloadDidFinish8locationy10Foundation3URLV_tF",
+            "moduleName": "SuperViewCore",
+            "declAttributes": [
+              "Dynamic",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setupBridge",
             "printedName": "setupBridge()",
             "children": [
@@ -5804,33 +5835,6 @@
             "declKind": "Func",
             "usr": "c:@CM@SuperViewCore@objc(cs)SuperWebView(im)setupCardScanBridge",
             "mangledName": "$s13SuperViewCore0a3WebB0C19setupCardScanBridgeyyF",
-            "moduleName": "SuperViewCore",
-            "isOpen": true,
-            "declAttributes": [
-              "Dynamic",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setupFacebookBridge",
-            "printedName": "setupFacebookBridge()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SuperViewCore@objc(cs)SuperWebView(im)setupFacebookBridge",
-            "mangledName": "$s13SuperViewCore0a3WebB0C19setupFacebookBridgeyyF",
             "moduleName": "SuperViewCore",
             "isOpen": true,
             "declAttributes": [
@@ -6849,6 +6853,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "WKDownloadManagerDelegate",
+            "printedName": "WKDownloadManagerDelegate",
+            "usr": "s:13SuperViewCore25WKDownloadManagerDelegateP",
+            "mangledName": "$s13SuperViewCore25WKDownloadManagerDelegateP"
           }
         ]
       },
@@ -9428,32 +9439,6 @@
           },
           {
             "kind": "Function",
-            "name": "setupFacebookAds",
-            "printedName": "setupFacebookAds()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SuperViewCore@objc(cs)SuperWebViewController(im)setupFacebookAds",
-            "mangledName": "$s13SuperViewCore0a3WebB10ControllerC16setupFacebookAdsyyF",
-            "moduleName": "SuperViewCore",
-            "declAttributes": [
-              "Dynamic",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "presentInterstitialAd",
             "printedName": "presentInterstitialAd()",
             "children": [
@@ -10980,116 +10965,6 @@
           },
           {
             "kind": "Var",
-            "name": "facebook",
-            "printedName": "facebook",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "SuperViewCore.FacebookOptions?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FacebookOptions",
-                    "printedName": "SuperViewCore.FacebookOptions",
-                    "usr": "s:13SuperViewCore15FacebookOptionsV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SuperViewCore0aB7OptionsV8facebookAA08FacebookD0VSgvp",
-            "mangledName": "$s13SuperViewCore0aB7OptionsV8facebookAA08FacebookD0VSgvp",
-            "moduleName": "SuperViewCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "SuperViewCore.FacebookOptions?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "FacebookOptions",
-                        "printedName": "SuperViewCore.FacebookOptions",
-                        "usr": "s:13SuperViewCore15FacebookOptionsV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore0aB7OptionsV8facebookAA08FacebookD0VSgvg",
-                "mangledName": "$s13SuperViewCore0aB7OptionsV8facebookAA08FacebookD0VSgvg",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "SuperViewCore.FacebookOptions?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "FacebookOptions",
-                        "printedName": "SuperViewCore.FacebookOptions",
-                        "usr": "s:13SuperViewCore15FacebookOptionsV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore0aB7OptionsV8facebookAA08FacebookD0VSgvs",
-                "mangledName": "$s13SuperViewCore0aB7OptionsV8facebookAA08FacebookD0VSgvs",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore0aB7OptionsV8facebookAA08FacebookD0VSgvM",
-                "mangledName": "$s13SuperViewCore0aB7OptionsV8facebookAA08FacebookD0VSgvM",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "font",
             "printedName": "font",
             "children": [
@@ -12081,7 +11956,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(activityIndicator:adMob:facebook:font:gps:inAppPurchase:navigationBar:oneSignal:rateMyApp:sideMenu:toolbar:webView:)",
+            "printedName": "init(activityIndicator:adMob:font:gps:inAppPurchase:navigationBar:oneSignal:rateMyApp:sideMenu:toolbar:webView:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12102,13 +11977,6 @@
                 "printedName": "SuperViewCore.AdMobOptions",
                 "hasDefaultArg": true,
                 "usr": "s:13SuperViewCore12AdMobOptionsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FacebookOptions",
-                "printedName": "SuperViewCore.FacebookOptions",
-                "hasDefaultArg": true,
-                "usr": "s:13SuperViewCore15FacebookOptionsV"
               },
               {
                 "kind": "TypeNominal",
@@ -12175,8 +12043,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13SuperViewCore0aB7OptionsV17activityIndicator5adMob8facebook4font3gps13inAppPurchase13navigationBar9oneSignal06rateMyM08sideMenu7toolbar03webB0AcA08ActivityfD0V_AA02AdhD0VAA08FacebookD0VAA010CustomFontD0VAA10GPSOptionsVAA02InmnD0VAA010NavigationpD0VAA03OnerD0VAA04RatetmD0VAA04SidevD0VAA07ToolbarD0VAA03WebbD0Vtcfc",
-            "mangledName": "$s13SuperViewCore0aB7OptionsV17activityIndicator5adMob8facebook4font3gps13inAppPurchase13navigationBar9oneSignal06rateMyM08sideMenu7toolbar03webB0AcA08ActivityfD0V_AA02AdhD0VAA08FacebookD0VAA010CustomFontD0VAA10GPSOptionsVAA02InmnD0VAA010NavigationpD0VAA03OnerD0VAA04RatetmD0VAA04SidevD0VAA07ToolbarD0VAA03WebbD0Vtcfc",
+            "usr": "s:13SuperViewCore0aB7OptionsV17activityIndicator5adMob4font3gps13inAppPurchase13navigationBar9oneSignal06rateMyL08sideMenu7toolbar03webB0AcA08ActivityfD0V_AA02AdhD0VAA010CustomFontD0VAA10GPSOptionsVAA02InlmD0VAA010NavigationoD0VAA03OneqD0VAA04RateslD0VAA04SideuD0VAA07ToolbarD0VAA03WebbD0Vtcfc",
+            "mangledName": "$s13SuperViewCore0aB7OptionsV17activityIndicator5adMob4font3gps13inAppPurchase13navigationBar9oneSignal06rateMyL08sideMenu7toolbar03webB0AcA08ActivityfD0V_AA02AdhD0VAA010CustomFontD0VAA10GPSOptionsVAA02InlmD0VAA010NavigationoD0VAA03OneqD0VAA04RateslD0VAA04SideuD0VAA07ToolbarD0VAA03WebbD0Vtcfc",
             "moduleName": "SuperViewCore",
             "declAttributes": [
               "AccessControl"
@@ -16502,54 +16370,6 @@
           },
           {
             "kind": "Function",
-            "name": "handleFacebookURL",
-            "printedName": "handleFacebookURL(url:options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[UIKit.UIApplication.OpenURLOptionsKey : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpenURLOptionsKey",
-                    "printedName": "UIKit.UIApplication.OpenURLOptionsKey",
-                    "usr": "c:@T@UIApplicationOpenURLOptionsKey"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@SuperViewCore@objc(cs)SuperView(im)handleFacebookURLWithUrl:options:",
-            "mangledName": "$s13SuperViewCore0aB0C17handleFacebookURL3url7optionsy10Foundation0F0V_SDySo30UIApplicationOpenURLOptionsKeyaypGtF",
-            "moduleName": "SuperViewCore",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "openURL",
             "printedName": "openURL(url:)",
             "children": [
@@ -17194,12 +17014,290 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "SuperViewCore",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "SuperViewCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WKDownloadManagerDelegate",
+        "printedName": "WKDownloadManagerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore25WKDownloadManagerDelegateP03webB0_15decidePolicyForSbSo05WKWebB0C_10Foundation3URLVtF",
+            "mangledName": "$s13SuperViewCore25WKDownloadManagerDelegateP03webB0_15decidePolicyForSbSo05WKWebB0C_10Foundation3URLVtF",
+            "moduleName": "SuperViewCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.WKDownloadManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : SuperViewCore.WKDownloadManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destinationUrlForFile",
+            "printedName": "destinationUrlForFile(withName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore25WKDownloadManagerDelegateP21destinationUrlForFile8withName10Foundation3URLVSgSS_tF",
+            "mangledName": "$s13SuperViewCore25WKDownloadManagerDelegateP21destinationUrlForFile8withName10Foundation3URLVSgSS_tF",
+            "moduleName": "SuperViewCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.WKDownloadManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : SuperViewCore.WKDownloadManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadDidFinish",
+            "printedName": "downloadDidFinish(location:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore25WKDownloadManagerDelegateP17downloadDidFinish8locationy10Foundation3URLV_tF",
+            "mangledName": "$s13SuperViewCore25WKDownloadManagerDelegateP17downloadDidFinish8locationy10Foundation3URLV_tF",
+            "moduleName": "SuperViewCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.WKDownloadManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : SuperViewCore.WKDownloadManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadDidFailed",
+            "printedName": "downloadDidFailed(withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore25WKDownloadManagerDelegateP17downloadDidFailed9withErrorys0K0_p_tF",
+            "mangledName": "$s13SuperViewCore25WKDownloadManagerDelegateP17downloadDidFailed9withErrorys0K0_p_tF",
+            "moduleName": "SuperViewCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.WKDownloadManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : SuperViewCore.WKDownloadManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore25WKDownloadManagerDelegatePAAE03webB0_15decidePolicyForSbSo05WKWebB0C_10Foundation3URLVtF",
+            "mangledName": "$s13SuperViewCore25WKDownloadManagerDelegatePAAE03webB0_15decidePolicyForSbSo05WKWebB0C_10Foundation3URLVtF",
+            "moduleName": "SuperViewCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.WKDownloadManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : SuperViewCore.WKDownloadManagerDelegate>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destinationUrlForFile",
+            "printedName": "destinationUrlForFile(withName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore25WKDownloadManagerDelegatePAAE21destinationUrlForFile8withName10Foundation3URLVSgSS_tF",
+            "mangledName": "$s13SuperViewCore25WKDownloadManagerDelegatePAAE21destinationUrlForFile8withName10Foundation3URLVSgSS_tF",
+            "moduleName": "SuperViewCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.WKDownloadManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : SuperViewCore.WKDownloadManagerDelegate>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadDidFailed",
+            "printedName": "downloadDidFailed(withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13SuperViewCore25WKDownloadManagerDelegatePAAE17downloadDidFailed9withErrorys0K0_p_tF",
+            "mangledName": "$s13SuperViewCore25WKDownloadManagerDelegatePAAE17downloadDidFailed9withErrorys0K0_p_tF",
+            "moduleName": "SuperViewCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.WKDownloadManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : SuperViewCore.WKDownloadManagerDelegate>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13SuperViewCore25WKDownloadManagerDelegateP",
+        "mangledName": "$s13SuperViewCore25WKDownloadManagerDelegateP",
+        "moduleName": "SuperViewCore",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -17213,43 +17311,365 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "SuperViewCore"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "SelfAdMobAware",
-        "printedName": "SelfAdMobAware",
+        "name": "WKDownloadManager",
+        "printedName": "WKDownloadManager",
         "children": [
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(delegate:supportedMimeTypes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WKDownloadManager",
+                "printedName": "SuperViewCore.WKDownloadManager",
+                "usr": "c:@M@SuperViewCore@objc(cs)WKDownloadManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKDownloadManagerDelegate",
+                "printedName": "any SuperViewCore.WKDownloadManagerDelegate",
+                "usr": "s:13SuperViewCore25WKDownloadManagerDelegateP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13SuperViewCore17WKDownloadManagerC8delegate18supportedMimeTypesAcA0dE8Delegate_p_SaySSGtcfc",
+            "mangledName": "$s13SuperViewCore17WKDownloadManagerC8delegate18supportedMimeTypesAcA0dE8Delegate_p_SaySSGtcfc",
+            "moduleName": "SuperViewCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WKDownloadManager",
+                "printedName": "SuperViewCore.WKDownloadManager",
+                "usr": "c:@M@SuperViewCore@objc(cs)WKDownloadManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SuperViewCore@objc(cs)WKDownloadManager(im)init",
+            "mangledName": "$s13SuperViewCore17WKDownloadManagerCACycfc",
+            "moduleName": "SuperViewCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
-            "name": "awake",
-            "printedName": "awake()",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationActionPolicy",
+                "printedName": "WebKit.WKNavigationActionPolicy",
+                "usr": "c:@E@WKNavigationActionPolicy"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewCore@objc(cs)WKDownloadManager(im)webView:decidePolicyForNavigationAction:decisionHandler:",
+            "mangledName": "$s13SuperViewCore17WKDownloadManagerC03webB0_15decidePolicyForSo018WKNavigationActionH0VSo05WKWebB0C_So0jK0CtYaF",
+            "moduleName": "SuperViewCore",
+            "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationResponsePolicy",
+                "printedName": "WebKit.WKNavigationResponsePolicy",
+                "usr": "c:@E@WKNavigationResponsePolicy"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationResponse",
+                "printedName": "WebKit.WKNavigationResponse",
+                "usr": "c:objc(cs)WKNavigationResponse"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewCore@objc(cs)WKDownloadManager(im)webView:decidePolicyForNavigationResponse:decisionHandler:",
+            "mangledName": "$s13SuperViewCore17WKDownloadManagerC03webB0_15decidePolicyForSo020WKNavigationResponseH0VSo05WKWebB0C_So0jK0CtYaF",
+            "moduleName": "SuperViewCore",
+            "objc_name": "webView:decidePolicyForNavigationResponse:decisionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:navigationResponse:didBecome:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationResponse",
+                "printedName": "WebKit.WKNavigationResponse",
+                "usr": "c:objc(cs)WKNavigationResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKDownload",
+                "printedName": "WebKit.WKDownload",
+                "usr": "c:objc(cs)WKDownload"
               }
             ],
             "declKind": "Func",
-            "usr": "s:13SuperViewCore14SelfAdMobAwareP5awakeyyFZ",
-            "mangledName": "$s13SuperViewCore14SelfAdMobAwareP5awakeyyFZ",
+            "usr": "c:@CM@SuperViewCore@objc(cs)WKDownloadManager(im)webView:navigationResponse:didBecomeDownload:",
+            "mangledName": "$s13SuperViewCore17WKDownloadManagerC03webB0_18navigationResponse9didBecomeySo05WKWebB0C_So012WKNavigationH0CSo0D0CtF",
             "moduleName": "SuperViewCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.SelfAdMobAware>",
-            "sugared_genericSig": "<Self where Self : SuperViewCore.SelfAdMobAware>",
-            "static": true,
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
+            "objc_name": "webView:navigationResponse:didBecomeDownload:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "download",
+            "printedName": "download(_:decideDestinationUsing:suggestedFilename:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKDownload",
+                "printedName": "WebKit.WKDownload",
+                "usr": "c:objc(cs)WKDownload"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLResponse",
+                "printedName": "Foundation.URLResponse",
+                "usr": "c:objc(cs)NSURLResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewCore@objc(cs)WKDownloadManager(im)download:decideDestinationUsingResponse:suggestedFilename:completionHandler:",
+            "mangledName": "$s13SuperViewCore17WKDownloadManagerC8download_22decideDestinationUsing17suggestedFilename10Foundation3URLVSgSo0D0C_So13NSURLResponseCSStYaF",
+            "moduleName": "SuperViewCore",
+            "objc_name": "download:decideDestinationUsingResponse:suggestedFilename:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "download",
+            "printedName": "download(_:didFailWithError:resumeData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKDownload",
+                "printedName": "WebKit.WKDownload",
+                "usr": "c:objc(cs)WKDownload"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewCore@objc(cs)WKDownloadManager(im)download:didFailWithError:resumeData:",
+            "mangledName": "$s13SuperViewCore17WKDownloadManagerC8download_16didFailWithError10resumeDataySo0D0C_s0J0_p10Foundation0L0VSgtF",
+            "moduleName": "SuperViewCore",
+            "objc_name": "download:didFailWithError:resumeData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadDidFinish",
+            "printedName": "downloadDidFinish(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKDownload",
+                "printedName": "WebKit.WKDownload",
+                "usr": "c:objc(cs)WKDownload"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewCore@objc(cs)WKDownloadManager(im)downloadDidFinish:",
+            "mangledName": "$s13SuperViewCore17WKDownloadManagerC17downloadDidFinishyySo0D0CF",
+            "moduleName": "SuperViewCore",
+            "objc_name": "downloadDidFinish:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Protocol",
-        "usr": "s:13SuperViewCore14SelfAdMobAwareP",
-        "mangledName": "$s13SuperViewCore14SelfAdMobAwareP",
+        "declKind": "Class",
+        "usr": "c:@M@SuperViewCore@objc(cs)WKDownloadManager",
+        "mangledName": "$s13SuperViewCore17WKDownloadManagerC",
         "moduleName": "SuperViewCore",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Escapable",
@@ -17259,389 +17679,63 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "SelfCardIOAware",
-        "printedName": "SelfCardIOAware",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "awake",
-            "printedName": "awake()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13SuperViewCore15SelfCardIOAwareP5awakeyyFZ",
-            "mangledName": "$s13SuperViewCore15SelfCardIOAwareP5awakeyyFZ",
-            "moduleName": "SuperViewCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.SelfCardIOAware>",
-            "sugared_genericSig": "<Self where Self : SuperViewCore.SelfCardIOAware>",
-            "static": true,
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:13SuperViewCore15SelfCardIOAwareP",
-        "mangledName": "$s13SuperViewCore15SelfCardIOAwareP",
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
         "moduleName": "SuperViewCore",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SelfCardScanAware",
-        "printedName": "SelfCardScanAware",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "awake",
-            "printedName": "awake()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13SuperViewCore17SelfCardScanAwareP5awakeyyFZ",
-            "mangledName": "$s13SuperViewCore17SelfCardScanAwareP5awakeyyFZ",
-            "moduleName": "SuperViewCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.SelfCardScanAware>",
-            "sugared_genericSig": "<Self where Self : SuperViewCore.SelfCardScanAware>",
-            "static": true,
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:13SuperViewCore17SelfCardScanAwareP",
-        "mangledName": "$s13SuperViewCore17SelfCardScanAwareP",
-        "moduleName": "SuperViewCore",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SelfFacebookAware",
-        "printedName": "SelfFacebookAware",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "awake",
-            "printedName": "awake()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13SuperViewCore17SelfFacebookAwareP5awakeyyFZ",
-            "mangledName": "$s13SuperViewCore17SelfFacebookAwareP5awakeyyFZ",
-            "moduleName": "SuperViewCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.SelfFacebookAware>",
-            "sugared_genericSig": "<Self where Self : SuperViewCore.SelfFacebookAware>",
-            "static": true,
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:13SuperViewCore17SelfFacebookAwareP",
-        "mangledName": "$s13SuperViewCore17SelfFacebookAwareP",
-        "moduleName": "SuperViewCore",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SelfLocationAware",
-        "printedName": "SelfLocationAware",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "awake",
-            "printedName": "awake()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13SuperViewCore17SelfLocationAwareP5awakeyyFZ",
-            "mangledName": "$s13SuperViewCore17SelfLocationAwareP5awakeyyFZ",
-            "moduleName": "SuperViewCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.SelfLocationAware>",
-            "sugared_genericSig": "<Self where Self : SuperViewCore.SelfLocationAware>",
-            "static": true,
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:13SuperViewCore17SelfLocationAwareP",
-        "mangledName": "$s13SuperViewCore17SelfLocationAwareP",
-        "moduleName": "SuperViewCore",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SelfOneSignalAware",
-        "printedName": "SelfOneSignalAware",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "awake",
-            "printedName": "awake()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13SuperViewCore18SelfOneSignalAwareP5awakeyyFZ",
-            "mangledName": "$s13SuperViewCore18SelfOneSignalAwareP5awakeyyFZ",
-            "moduleName": "SuperViewCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.SelfOneSignalAware>",
-            "sugared_genericSig": "<Self where Self : SuperViewCore.SelfOneSignalAware>",
-            "static": true,
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:13SuperViewCore18SelfOneSignalAwareP",
-        "mangledName": "$s13SuperViewCore18SelfOneSignalAwareP",
-        "moduleName": "SuperViewCore",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SelfScanQrAware",
-        "printedName": "SelfScanQrAware",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "awake",
-            "printedName": "awake()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13SuperViewCore15SelfScanQrAwareP5awakeyyFZ",
-            "mangledName": "$s13SuperViewCore15SelfScanQrAwareP5awakeyyFZ",
-            "moduleName": "SuperViewCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.SelfScanQrAware>",
-            "sugared_genericSig": "<Self where Self : SuperViewCore.SelfScanQrAware>",
-            "static": true,
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:13SuperViewCore15SelfScanQrAwareP",
-        "mangledName": "$s13SuperViewCore15SelfScanQrAwareP",
-        "moduleName": "SuperViewCore",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SelfFirebaseAware",
-        "printedName": "SelfFirebaseAware",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "awake",
-            "printedName": "awake()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13SuperViewCore17SelfFirebaseAwareP5awakeyyFZ",
-            "mangledName": "$s13SuperViewCore17SelfFirebaseAwareP5awakeyyFZ",
-            "moduleName": "SuperViewCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : SuperViewCore.SelfFirebaseAware>",
-            "sugared_genericSig": "<Self where Self : SuperViewCore.SelfFirebaseAware>",
-            "static": true,
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:13SuperViewCore17SelfFirebaseAwareP",
-        "mangledName": "$s13SuperViewCore17SelfFirebaseAwareP",
-        "moduleName": "SuperViewCore",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
+          "RawDocComment"
         ]
       },
       {
@@ -20058,610 +20152,6 @@
         "moduleName": "SuperViewCore",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SuperViewCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FacebookOptions",
-        "printedName": "FacebookOptions",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "isEnabled",
-            "printedName": "isEnabled",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SuperViewCore15FacebookOptionsV9isEnabledSbvp",
-            "mangledName": "$s13SuperViewCore15FacebookOptionsV9isEnabledSbvp",
-            "moduleName": "SuperViewCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV9isEnabledSbvg",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV9isEnabledSbvg",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV9isEnabledSbvs",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV9isEnabledSbvs",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV9isEnabledSbvM",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV9isEnabledSbvM",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "facebookID",
-            "printedName": "facebookID",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SuperViewCore15FacebookOptionsV10facebookIDSSSgvp",
-            "mangledName": "$s13SuperViewCore15FacebookOptionsV10facebookIDSSSgvp",
-            "moduleName": "SuperViewCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV10facebookIDSSSgvg",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV10facebookIDSSSgvg",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV10facebookIDSSSgvs",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV10facebookIDSSSgvs",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV10facebookIDSSSgvM",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV10facebookIDSSSgvM",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "bannerPlacementID",
-            "printedName": "bannerPlacementID",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SuperViewCore15FacebookOptionsV17bannerPlacementIDSSSgvp",
-            "mangledName": "$s13SuperViewCore15FacebookOptionsV17bannerPlacementIDSSSgvp",
-            "moduleName": "SuperViewCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV17bannerPlacementIDSSSgvg",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV17bannerPlacementIDSSSgvg",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV17bannerPlacementIDSSSgvs",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV17bannerPlacementIDSSSgvs",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV17bannerPlacementIDSSSgvM",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV17bannerPlacementIDSSSgvM",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "interstitialPlacementID",
-            "printedName": "interstitialPlacementID",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SuperViewCore15FacebookOptionsV23interstitialPlacementIDSSSgvp",
-            "mangledName": "$s13SuperViewCore15FacebookOptionsV23interstitialPlacementIDSSSgvp",
-            "moduleName": "SuperViewCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV23interstitialPlacementIDSSSgvg",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV23interstitialPlacementIDSSSgvg",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV23interstitialPlacementIDSSSgvs",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV23interstitialPlacementIDSSSgvs",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SuperViewCore15FacebookOptionsV23interstitialPlacementIDSSSgvM",
-                "mangledName": "$s13SuperViewCore15FacebookOptionsV23interstitialPlacementIDSSSgvM",
-                "moduleName": "SuperViewCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(isEnabled:facebookID:bannerPlacementID:interstitialPlacementID:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FacebookOptions",
-                "printedName": "SuperViewCore.FacebookOptions",
-                "usr": "s:13SuperViewCore15FacebookOptionsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13SuperViewCore15FacebookOptionsV9isEnabled10facebookID015bannerPlacementI0012interstitialkI0ACSbSg_SSSgA2Itcfc",
-            "mangledName": "$s13SuperViewCore15FacebookOptionsV9isEnabled10facebookID015bannerPlacementI0012interstitialkI0ACSbSg_SSSgA2Itcfc",
-            "moduleName": "SuperViewCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FacebookOptions",
-                "printedName": "SuperViewCore.FacebookOptions",
-                "usr": "s:13SuperViewCore15FacebookOptionsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13SuperViewCore15FacebookOptionsV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s13SuperViewCore15FacebookOptionsV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "SuperViewCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13SuperViewCore15FacebookOptionsV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s13SuperViewCore15FacebookOptionsV6encode2toys7Encoder_p_tKF",
-            "moduleName": "SuperViewCore",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13SuperViewCore15FacebookOptionsV",
-        "mangledName": "$s13SuperViewCore15FacebookOptionsV",
-        "moduleName": "SuperViewCore",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
         ]
       },
       {
@@ -28144,91 +27634,91 @@
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10695,
+      "offset": 10663,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10812,
+      "offset": 10780,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11231,
+      "offset": 11199,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11309,
+      "offset": 11277,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11321,
+      "offset": 11289,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11394,
+      "offset": 11362,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11409,
+      "offset": 11377,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 11482,
+      "offset": 11450,
       "length": 3,
       "value": "1.2"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11500,
+      "offset": 11468,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11954,
+      "offset": 11922,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11966,
+      "offset": 11934,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12389,
+      "offset": 12357,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/WebView\/SuperWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25482,
+      "offset": 25344,
       "length": 5,
       "value": "false"
     },
@@ -28569,10 +28059,10 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/SuperView.swift",
-      "kind": "Dictionary",
-      "offset": 5056,
-      "length": 3,
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Core\/DownloadManager\/WKDownloadManager.swift",
+      "kind": "Array",
+      "offset": 444,
+      "length": 2,
       "value": "[]"
     },
     {
@@ -28609,20 +28099,6 @@
       "offset": 2408,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Models\/FacebookOptions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 242,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Models\/FacebookOptions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 573,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewCore\/Helpers\/NVActivityIndicatorView\/NVActivityIndicatorView.swift",

@@ -5,3 +5,5 @@ Podfile.lock
 *.xcworkspace
 /Pods
 /vendor
+.build
+.swiftpm

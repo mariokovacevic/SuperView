@@ -267,9 +267,5 @@
 	</array>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
-	<key>FacebookAppID</key>
-	<string>1240248316125265</string>
-	<key>FacebookDisplayName</key>
-	<string>SuperView</string>
 </dict>
 </plist>

@@ -5,7 +5,6 @@
 //  Created by Brommko LLC on 09/10/2018.
 //
 
-import UIKit
 import Foundation
 import SuperViewCore
 
@@ -15,10 +14,6 @@ import SuperViewAdMob
 
 #if canImport(SuperViewCardScan)
 import SuperViewCardScan
-#endif
-
-#if canImport(SuperViewFacebook)
-import SuperViewFacebook
 #endif
 
 #if canImport(SuperViewOneSignal)
@@ -53,10 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         #if canImport(SuperViewCardScan)
         SuperView.configureCardScan()
-        #endif
-
-        #if canImport(SuperViewFacebook)
-        SuperView.configureFacebook()
         #endif
 
         #if canImport(SuperViewFirebase)
