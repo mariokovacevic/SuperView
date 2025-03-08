@@ -21,7 +21,6 @@ This is an iOS project that allows you to wrap your website in a super simple iO
 * **OneSignal** – OneSignal is a high volume and reliable push notification system for mobile and web applications. OneSignal provides a single UI and API to deliver messages across iOS and Android.
 * **Deep Linking** – A deep link is a URL that opens and directs a user to a specific location within an app. This app has deep linking integrated in the project. Directs the user to any web site you want.
 * **Social Login** – Our webview app has ability to login and signup with social networks like Facebook, Google, LinkedIn and similar.
-* **Facebook native login**
 * **HTML5 videos** – Our app supports HTML5 videos. In modern browsers, adding a video to your page is as easy as adding an image. No longer do you need to deal with special plug-ins or require crazy markup, you can do it with a single element. Our webview app will recognize the video and play it in full screen
 * **Loading indicator** – Good loading indicators always give some type of immediate feedback. They notify users that the app needs more time to process the user action.
 * **Progress indicator** – Good progress indicators always give some type of immediate feedback. They notify users that the app needs more time to process the user action, and tell (approximately) how much time it will take.
@@ -40,12 +39,12 @@ This is an iOS project that allows you to wrap your website in a super simple iO
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate SuperView into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod "SuperView/Core", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.3.0'
-pod "SuperView/OneSignal", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.3.0'
-pod "SuperView/AdMob", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.3.0'
-pod "SuperView/Firebase", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.3.0'
-pod "SuperView/QR", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.3.0'
-pod "SuperView/Location", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.3.0'
+pod "SuperView/Core", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.4.0'
+pod "SuperView/OneSignal", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.4.0'
+pod "SuperView/AdMob", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.4.0'
+pod "SuperView/Firebase", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.4.0'
+pod "SuperView/QR", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.4.0'
+pod "SuperView/Location", :git => 'https://github.com/brommko/SuperView.git', :tag => '1.4.0'
 ```
 Use SHIFT + CMD + K if you have an error with building.
 
