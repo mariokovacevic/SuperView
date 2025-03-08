@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>purchaseCode</key>
-	<string></string>
 	<key>webView</key>
 	<dict>
 		<key>userScript</key>
@@ -21,9 +19,9 @@
 		<key>waitUntilLoaded</key>
 		<true/>
 		<key>allowPullToRefresh</key>
-		<true/>
+		<false/>
 		<key>allowBounce</key>
-		<true/>
+		<false/>
 		<key>allowCache</key>
 		<false/>
 		<key>allowZoom</key>
@@ -43,7 +41,9 @@
 		<key>useWindowOpen</key>
 		<true/>
 		<key>useNetworkCheck</key>
-		<false/>
+		<true/>
+		<key>openInDocumentPreview</key>
+		<string>/file</string>
 		<key>customURLSchemes</key>
 		<array>
 			<string>itunes.apple.com</string>
@@ -144,11 +144,11 @@
 		<key>isEnabled</key>
 		<true/>
 		<key>splashProgress</key>
-		<true/>
+		<false/>
 		<key>splashContentMode</key>
 		<integer>2</integer>
 		<key>message</key>
-		<string></string>
+		<string>Loading...</string>
 		<key>type</key>
 		<integer>3</integer>
 	</dict>
@@ -157,30 +157,25 @@
 		<key>isEnabled</key>
 		<true/>
 		<key>productId</key>
-		<string></string>
-	</dict>
-	<key>facebook</key>
-	<dict>
-		<key>isEnabled</key>
-		<true/>
-		<key>facebookID</key>
-		<string></string>
-		<key>interstitialPlacementID</key>
-		<string></string>
-		<key>bannerPlacementID</key>
-		<string></string>
+		<string>com.brommko.universalwebview.removeads</string>
 	</dict>
 	<key>sideMenu</key>
 	<dict>
 		<key>isEnabled</key>
-		<false/>
+		<true/>
 		<key>items</key>
 		<array>
 			<dict>
 				<key>title</key>
-				<string></string>
+				<string>Index</string>
 				<key>url</key>
-				<string></string>
+				<string>index</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>No internet</string>
+				<key>url</key>
+				<string>no-internet-connection</string>
 			</dict>
 		</array>
 	</dict>

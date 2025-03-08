@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'SuperView'
-  s.version      = '1.3.4'
+  s.version      = '1.4.0'
   s.summary      = 'SuperView allows you to wrap your website in a super simple iOS app.'
   s.description  = 'SuperView iOS SDK provides a library that makes it easy for an iOS developer to wrap his website in a super simple iOS app.'
   s.homepage     = 'https://github.com/brommko/SuperView'
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.author       = { 'Brommko LLC' => 'brommko@yahoo.com' }
-  s.platform     = :ios, '13.0'
+  s.platform     = :ios, '15.6'
   s.source       = { 
     :git => 'https://github.com/brommko/SuperView.git',
     :tag => s.version.to_s,
@@ -28,31 +28,31 @@ Pod::Spec.new do |s|
   }
   s.weak_framework = 'UIKit'
   s.default_subspec = 'Core'
-  s.swift_versions = '5.5.1'
+  s.swift_versions = '6.0.3'
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   s.subspec 'Core' do |core|
     core.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
-    core.ios.deployment_target = '13.0'
+    core.ios.deployment_target = '15.6'
     core.ios.vendored_frameworks = 'Frameworks/SuperViewCore.xcframework'
   end
 
   s.subspec 'OneSignal' do |onesignal|
-    onesignal.ios.vendored_frameworks = 'Frameworks/SuperViewOneSignal.xcframework', 'Frameworks/OneSignal.xcframework'
+    onesignal.ios.vendored_frameworks = 'Frameworks/SuperViewOneSignal.xcframework'
     onesignal.dependency 'SuperView/Core'
+    onesignal.dependency 'OneSignal/OneSignal', '5.2.9'
   end
 
   s.subspec 'AdMob' do |admob|
     admob.ios.vendored_frameworks = 'Frameworks/SuperViewAdMob.xcframework'
     admob.dependency 'SuperView/Core'
-    admob.dependency 'Google-Mobile-Ads-SDK', '8.13.0'
-    admob.dependency 'Firebase', '8.10.0'
+    admob.dependency 'Google-Mobile-Ads-SDK', '11.13.0'
   end
 
   s.subspec 'Firebase' do |firebase|
     firebase.ios.vendored_frameworks = 'Frameworks/SuperViewFirebase.xcframework'
     firebase.dependency 'SuperView/Core'
-    firebase.dependency 'Firebase', '8.10.0'
-    firebase.dependency 'Firebase/Messaging', '8.10.0'
+    firebase.dependency 'Firebase', '11.6.0'
+    firebase.dependency 'Firebase/Messaging', '11.6.0'
   end
 
   s.subspec 'Facebook' do |facebook|
@@ -72,6 +72,11 @@ Pod::Spec.new do |s|
   s.subspec 'QR' do |qr|
     qr.ios.vendored_frameworks = 'Frameworks/SuperViewQR.xcframework'
     qr.dependency 'SuperView/Core'
+  end
+
+  s.subspec 'CardScan' do |card|
+    card.ios.vendored_frameworks = 'Frameworks/SuperViewCardScan.xcframework'
+    card.dependency 'SuperView/Core'
   end
 
 end

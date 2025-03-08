@@ -46,19 +46,19 @@ USAGE:
     $0 srcfile dstpath
 
 DESCRIPTION:
-    This script aim to generate ios app icons easier and simply.
+    This script aims to generate iOS app icons easily and simply.
 
-    srcfile - The source png image. Preferably above 1024x1024
-    dstpath - The destination path where the icons generate to.
+    srcfile - The source PNG image. Preferably above 1024x1024
+    dstpath - The destination path where the icons are generated.
 
-    This script is depend on ImageMagick. So you must install ImageMagick first
-    You can use 'sudo brew install ImageMagick' to install it
+    This script depends on ImageMagick. So you must install ImageMagick first.
+    You can use 'sudo brew install ImageMagick' to install it.
 
 AUTHOR:
     Pawpaw<lvyexuwenfa100@126.com>
 
 LICENSE:
-    This script follow MIT license.
+    This script follows the MIT license.
 
 EXAMPLE:
     $0 1024.png ~/123
@@ -66,71 +66,70 @@ EOF
 }
 
 # Check ImageMagick
-command -v convert >/dev/null 2>&1 || { error >&2 "The ImageMagick is not installed. Please use brew to install it first."; exit -1; }
+command -v magick >/dev/null 2>&1 || { error >&2 "The ImageMagick is not installed. Please use brew to install it first."; exit -1; }
 
-# Check param
+# Check parameters
 if [ $# != 2 ];then
     usage
     exit -1
 fi
 
-# Check dst path whether exist.
+# Check destination path existence
 if [ ! -d "$DST_PATH" ];then
     mkdir -p "$DST_PATH"
 fi
 
-# Generate, refer to:https://developer.apple.com/library/ios/qa/qa1686/_index.html
-
+# Generate icons
 info 'Generate iTunesArtwork@2x.png ...'
-convert "$SRC_FILE" -resize 1024x1024 "$DST_PATH/ItunesArtwork@2x.png"
+magick "$SRC_FILE" -resize 1024x1024 "$DST_PATH/ItunesArtwork@2x.png"
 
 info 'Generate Icon-20.png ...'
-convert "$SRC_FILE" -resize 20x20 "$DST_PATH/Icon-App-20x20@1x.png"
+magick "$SRC_FILE" -resize 20x20 "$DST_PATH/Icon-App-20x20@1x.png"
 info 'Generate Icon-20@2x.png ...'
-convert "$SRC_FILE" -resize 40x40 "$DST_PATH/Icon-App-20x20@2x.png"
+magick "$SRC_FILE" -resize 40x40 "$DST_PATH/Icon-App-20x20@2x.png"
 info 'Generate Icon-40@2x.png ...'
-convert "$SRC_FILE" -resize 60x60 "$DST_PATH/Icon-App-20x20@3x.png"
+magick "$SRC_FILE" -resize 60x60 "$DST_PATH/Icon-App-20x20@3x.png"
 
 info 'Generate Icon-29.png ...'
-convert "$SRC_FILE" -resize 29x29 "$DST_PATH/Icon-App-29x29@1x.png"
+magick "$SRC_FILE" -resize 29x29 "$DST_PATH/Icon-App-29x29@1x.png"
 info 'Generate Icon-29@2x.png ...'
-convert "$SRC_FILE" -resize 58x58 "$DST_PATH/Icon-App-29x29@2x.png"
+magick "$SRC_FILE" -resize 58x58 "$DST_PATH/Icon-App-29x29@2x.png"
 info 'Generate Icon-29@3x.png ...'
-convert "$SRC_FILE" -resize 87x87 "$DST_PATH/Icon-App-29x29@3x.png"
+magick "$SRC_FILE" -resize 87x87 "$DST_PATH/Icon-App-29x29@3x.png"
 
 info 'Generate Icon-40.png ...'
-convert "$SRC_FILE" -resize 40x40 "$DST_PATH/Icon-App-40x40@1x.png"
+magick "$SRC_FILE" -resize 40x40 "$DST_PATH/Icon-App-40x40@1x.png"
 info 'Generate Icon-40@2x.png ...'
-convert "$SRC_FILE" -resize 80x80 "$DST_PATH/Icon-App-40x40@2x.png"
+magick "$SRC_FILE" -resize 80x80 "$DST_PATH/Icon-App-40x40@2x.png"
 info 'Generate Icon-40@3x.png ...'
-convert "$SRC_FILE" -resize 120x120 "$DST_PATH/Icon-App-40x40@3x.png"
+magick "$SRC_FILE" -resize 120x120 "$DST_PATH/Icon-App-40x40@3x.png"
 
 info 'Generate Icon-60@2x.png ...'
-convert "$SRC_FILE" -resize 120x120 "$DST_PATH/Icon-App-60x60@2x.png"
+magick "$SRC_FILE" -resize 120x120 "$DST_PATH/Icon-App-60x60@2x.png"
 info 'Generate Icon-60@3x.png ...'
-convert "$SRC_FILE" -resize 180x180 "$DST_PATH/Icon-App-60x60@3x.png"
+magick "$SRC_FILE" -resize 180x180 "$DST_PATH/Icon-App-60x60@3x.png"
 
 info 'Generate Icon-76.png ...'
-convert "$SRC_FILE" -resize 76x76 "$DST_PATH/Icon-App-76x76@1x.png"
+magick "$SRC_FILE" -resize 76x76 "$DST_PATH/Icon-App-76x76@1x.png"
 info 'Generate Icon-76@2x.png ...'
-convert "$SRC_FILE" -resize 152x152 "$DST_PATH/Icon-App-76x76@2x.png"
+magick "$SRC_FILE" -resize 152x152 "$DST_PATH/Icon-App-76x76@2x.png"
 
 info 'Generate Icon-57.png ...'
-convert "$SRC_FILE" -resize 57x57 "$DST_PATH/Icon-App-57x57@1x.png"
+magick "$SRC_FILE" -resize 57x57 "$DST_PATH/Icon-App-57x57@1x.png"
 info 'Generate Icon-57@2x.png ...'
-convert "$SRC_FILE" -resize 114x114 "$DST_PATH/Icon-App-57x57@2x.png"
+magick "$SRC_FILE" -resize 114x114 "$DST_PATH/Icon-App-57x57@2x.png"
 
 info 'Generate Icon-83.5@2x.png ...'
-convert "$SRC_FILE" -resize 167x167 "$DST_PATH/Icon-App-83.5x83.5@2x.png"
+magick "$SRC_FILE" -resize 167x167 "$DST_PATH/Icon-App-83.5x83.5@2x.png"
 
 info 'Generate Icon-72.png ...'
-convert "$SRC_FILE" -resize 72x72 "$DST_PATH/Icon-App-72x72@1x.png"
+magick "$SRC_FILE" -resize 72x72 "$DST_PATH/Icon-App-72x72@1x.png"
 info 'Generate Icon-72@2x.png ...'
-convert "$SRC_FILE" -resize 144x144 "$DST_PATH/Icon-App-72x72@2x.png"
+magick "$SRC_FILE" -resize 144x144 "$DST_PATH/Icon-App-72x72@2x.png"
 
 info 'Generate Icon-50.png ...'
-convert "$SRC_FILE" -resize 50x50 "$DST_PATH/Icon-Small-50x50@1x.png"
+magick "$SRC_FILE" -resize 50x50 "$DST_PATH/Icon-Small-50x50@1x.png"
 info 'Generate Icon-50@2x.png ...'
-convert "$SRC_FILE" -resize 100x100 "$DST_PATH/Icon-Small-50x50@2x.png"
+magick "$SRC_FILE" -resize 100x100 "$DST_PATH/Icon-Small-50x50@2x.png"
 
 info 'Generate Done.'

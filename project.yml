@@ -3,29 +3,59 @@ settingGroups:
   commonBuildSettings:
     SWIFT_VERSION: 5
     CURRENT_PROJECT_VERSION: 1
-    IPHONEOS_DEPLOYMENT_TARGET: 13.0
+    MARKETING_VERSION: 1.0.0
+    IPHONEOS_DEPLOYMENT_TARGET: 15.6
     SWIFT_OPTIMIZATION_LEVEL: -Onone
     TARGETED_DEVICE_FAMILY: '1'
     ENABLE_BITCODE: NO
     BUILD_LIBRARIES_FOR_DISTRIBUTION: YES
     CODE_SIGN_IDENTITY: "iPhone Developer"
     DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+    DEVELOPMENT_TEAM: 56XX2LQCB2
 targets:
   App:
     type: application
     platform: iOS
-    deploymentTarget: 13.0
+    deploymentTarget: 15.6
     sources:
       - path: Sources
-#      - path: www
-#        type: folder
-    entitlements: 
-      path: App.entitlements
-      properties:
-        aps-environment: development
     settings:
       base:
         INFOPLIST_FILE: Sources/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.bommko.UniversalWebView
+        CODE_SIGN_ENTITLEMENTS: Sources/App.entitlements
+        CFBundleDisplayName: SuperView
       groups:
         - commonBuildSettings
+    dependencies:
+      - target: NotificationService
+        embed:
+          embedAndSign: true
+  NotificationService:
+    platform: iOS
+    type: app-extension
+    sources:
+      - NotificationService
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.bommko.UniversalWebView.NotificationService
+        CODE_SIGN_ENTITLEMENTS: NotificationService/NotificationService.entitlements
+      groups:
+        - commonBuildSettings
+schemes:
+  App:
+    build:
+      targets:
+        App: all
+        NotificationService: none
+    run:
+      configuration: Debug
+    test:
+      targets:
+        - App
+  NotificationService:
+    build:
+      targets:
+        NotificationService: all
+    run:
+      configuration: Debug

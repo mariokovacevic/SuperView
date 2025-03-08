@@ -38,7 +38,7 @@
 
     function getOneSignalToken() {
         window.bridge.post('onesignaltoken', {}, (results, error) => {
-            $('#onesignal_token').html(results.token)
+            $('#onesignal_token').html("OneSignal ID: " + results.onesignalId + " <br /> PushSubscriptionId: " + results.pushSubscriptionID)
         })
     }
 
@@ -70,22 +70,6 @@
         window.bridge.post('make_purchase', {})
     }
 
-    function loginWithFacebook() {
-        window.bridge.post('facebook_login', {})
-    }
-
-    function getFacebookAccessToken() {
-        window.bridge.post('get_facebook_token', {}, (results, error) => {
-            $('#facebook_access_token').html("Access token: " + results.token)
-        })
-    }
-
-    function getFacebookProfile() {
-        window.bridge.post('get_facebook_profile', {}, (results, error) => {
-            $('#facebook_profile').html("Profile: " + results.profile)
-        })
-    }
-
     function showInterstitial() {
         window.bridge.post('show_interstitial', {})
     }
@@ -99,6 +83,10 @@
         window.bridge.post('app_purchased', {}, (results, error) => {
             $('#purchased').html("purchased: " + results.purchased)
         })
+    }
+        
+    function requestNotificationPermission() {
+        window.bridge.post('request_notification_permission');
     }
 
     function createLocalNotification(display, message) {
@@ -188,8 +176,9 @@
         window.bridge.post('scan_qr');
 
         var unregisterHandler = window.bridge.on('scan_qr_details', (parameters)=> {
-             $('#qr_details').html("data: " + parameters.data);
-         })
+            $('#qr_details').html("data: " + parameters.data);
+            console.log(parameters.data);
+        });
     }
     </script>
 
@@ -208,7 +197,7 @@
                             <h4 class="card-title">Welcome</h4>
                             <p class="card-text">SuperView is an Xcode project that allows you to wrap your website in a super simple iOS app. If you are a web developer who wants to release an iOS app, this should help you cut some corners when it comes to learning Swift. It is ideal for single page web app with on-screen/no navigation. For example, a game, interactive page, web based slideshow, etc.</p>
                             <div class="read-more">
-                                <a href="https://codecanyon.net/item/universal-webview-ios-app-push-notification-swift-admob/17383449" class="btn btn-primary">SuperView App Page</a>
+                                <a href="https://superview.app" class="btn btn-primary">SuperView App Page</a>
                             </div>
                         </div>
                     </div>
@@ -233,19 +222,6 @@
                             <p class="card-text">Click on the button bellow to test your website. Just search your web via Google and check it out.</p>
                             <div class="read-more">
                                 <a href="http://www.google.com" class="btn btn-primary" target="_blank">Visit Google</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-16">
-                    <div class="card">
-                        <div class="card-block">
-                            <h4 class="card-title">Download &amp; Upload</h4>
-                            <p class="card-text">WebView App has a download manager. Try to download sample file. You can also upload a file with the file picker.</p>
-                            <div class="read-more">
-                                <a href="bird.mp3" class="btn btn-primary" download>Download</a>
-                                <a href="https://encodable.com/uploaddemo/" class="btn btn-primary">Upload</a>
                             </div>
                         </div>
                     </div>
@@ -395,6 +371,17 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="col-md-16">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">Request Notification Permission</h4>
+                            <div class="read-more">
+                                <a id="local_notification" class="btn btn-primary" onClick="requestNotificationPermission()" >Request</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-md-16">
                     <div class="card">
@@ -504,25 +491,6 @@
                             <h4 class="card-title">Hide Loader</h4>
                             <div class="read-more">
                                 <a id="hide_loader" class="btn btn-primary" onClick="hideLoader()" >Hide Loader</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-16">
-                        <div class="card">
-                            <div class="card-block">
-                            <h4 class="card-title">Facebook</h4>
-                            <div class="read-more">
-                                <a  class="btn btn-primary" onClick="loginWithFacebook()" >Login with Facebook</a>
-                            </div>
-                            <p id="facebook_access_token"></p>
-                            <div class="read-more">
-                                <a  class="btn btn-primary" onClick="getFacebookAccessToken()" >Get Facebook Access Token</a>
-                            </div>
-                            <p id="facebook_profile"></p>
-                            <div class="read-more">
-                                <a  class="btn btn-primary" onClick="getFacebookProfile()" >Get Facebook Profile</a>
                             </div>
                         </div>
                     </div>

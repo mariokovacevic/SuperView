@@ -1,1 +1,9 @@
 Podfile.lock
+.DS_Store
+*.lock
+*.xcodeproj
+*.xcworkspace
+/Pods
+/vendor
+.build
+.swiftpm

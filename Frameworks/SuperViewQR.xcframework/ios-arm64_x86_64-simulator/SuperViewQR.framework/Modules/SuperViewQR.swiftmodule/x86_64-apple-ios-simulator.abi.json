@@ -1,0 +1,1897 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SuperViewQR",
+    "printedName": "SuperViewQR",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewQR"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SuperViewQR"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewQR"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QRGeneratorAppearance",
+        "printedName": "QRGeneratorAppearance",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QRGeneratorAppearance",
+                "printedName": "SuperViewQR.QRGeneratorAppearance",
+                "usr": "s:11SuperViewQR21QRGeneratorAppearanceV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SuperViewQR21QRGeneratorAppearanceV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11SuperViewQR21QRGeneratorAppearanceV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "SuperViewQR",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SuperViewQR21QRGeneratorAppearanceV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11SuperViewQR21QRGeneratorAppearanceV6encode2toys7Encoder_p_tKF",
+            "moduleName": "SuperViewQR",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11SuperViewQR21QRGeneratorAppearanceV",
+        "mangledName": "$s11SuperViewQR21QRGeneratorAppearanceV",
+        "moduleName": "SuperViewQR",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QRGeneratorViewController",
+        "printedName": "QRGeneratorViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "showCloseButton",
+            "printedName": "showCloseButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SuperViewQR011QRGeneratorB10ControllerC15showCloseButtonSbvp",
+            "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC15showCloseButtonSbvp",
+            "moduleName": "SuperViewQR",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR011QRGeneratorB10ControllerC15showCloseButtonSbvg",
+                "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC15showCloseButtonSbvg",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR011QRGeneratorB10ControllerC15showCloseButtonSbvs",
+                "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC15showCloseButtonSbvs",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR011QRGeneratorB10ControllerC15showCloseButtonSbvM",
+                "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC15showCloseButtonSbvM",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appearance",
+            "printedName": "appearance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QRGeneratorAppearance",
+                "printedName": "SuperViewQR.QRGeneratorAppearance",
+                "usr": "s:11SuperViewQR21QRGeneratorAppearanceV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SuperViewQR011QRGeneratorB10ControllerC10appearanceAA0D10AppearanceVvp",
+            "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC10appearanceAA0D10AppearanceVvp",
+            "moduleName": "SuperViewQR",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QRGeneratorAppearance",
+                    "printedName": "SuperViewQR.QRGeneratorAppearance",
+                    "usr": "s:11SuperViewQR21QRGeneratorAppearanceV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR011QRGeneratorB10ControllerC10appearanceAA0D10AppearanceVvg",
+                "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC10appearanceAA0D10AppearanceVvg",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QRGeneratorAppearance",
+                    "printedName": "SuperViewQR.QRGeneratorAppearance",
+                    "usr": "s:11SuperViewQR21QRGeneratorAppearanceV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR011QRGeneratorB10ControllerC10appearanceAA0D10AppearanceVvs",
+                "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC10appearanceAA0D10AppearanceVvs",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR011QRGeneratorB10ControllerC10appearanceAA0D10AppearanceVvM",
+                "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC10appearanceAA0D10AppearanceVvM",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(string:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QRGeneratorViewController",
+                "printedName": "SuperViewQR.QRGeneratorViewController",
+                "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SuperViewQR011QRGeneratorB10ControllerC6stringACSS_tcfc",
+            "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC6stringACSS_tcfc",
+            "moduleName": "SuperViewQR",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController(im)viewDidLoad",
+            "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC11viewDidLoadyyF",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "prefersStatusBarHidden",
+            "printedName": "prefersStatusBarHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController(py)prefersStatusBarHidden",
+            "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC22prefersStatusBarHiddenSbvp",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "prefersStatusBarHidden",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController(im)prefersStatusBarHidden",
+                "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC22prefersStatusBarHiddenSbvg",
+                "moduleName": "SuperViewQR",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "prefersStatusBarHidden",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportedInterfaceOrientations",
+            "printedName": "supportedInterfaceOrientations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController(py)supportedInterfaceOrientations",
+            "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvp",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "supportedInterfaceOrientations",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientationMask",
+                    "printedName": "UIKit.UIInterfaceOrientationMask",
+                    "usr": "c:@E@UIInterfaceOrientationMask"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController(im)supportedInterfaceOrientations",
+                "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvg",
+                "moduleName": "SuperViewQR",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "supportedInterfaceOrientations",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QRGeneratorViewController",
+                "printedName": "SuperViewQR.QRGeneratorViewController",
+                "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SuperViewQR.QRGeneratorViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QRGeneratorViewController",
+                    "printedName": "SuperViewQR.QRGeneratorViewController",
+                    "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController(im)initWithCoder:",
+            "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SuperViewQR@objc(cs)QRGeneratorViewController",
+        "mangledName": "$s11SuperViewQR011QRGeneratorB10ControllerC",
+        "moduleName": "SuperViewQR",
+        "isOpen": true,
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewQR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SuperViewCore",
+        "printedName": "SuperViewCore",
+        "declKind": "Import",
+        "moduleName": "SuperViewQR"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewQR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SuperViewCore",
+        "printedName": "SuperViewCore",
+        "declKind": "Import",
+        "moduleName": "SuperViewQR"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "SuperViewQR"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SuperViewQR"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QRScannerViewController",
+        "printedName": "QRScannerViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "showCloseButton",
+            "printedName": "showCloseButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SuperViewQR09QRScannerB10ControllerC15showCloseButtonSbvp",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC15showCloseButtonSbvp",
+            "moduleName": "SuperViewQR",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC15showCloseButtonSbvg",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC15showCloseButtonSbvg",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC15showCloseButtonSbvs",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC15showCloseButtonSbvs",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC15showCloseButtonSbvM",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC15showCloseButtonSbvM",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "found",
+            "printedName": "found",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SuperViewQR09QRScannerB10ControllerC5foundySSSgcSgvp",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC5foundySSSgcSgvp",
+            "moduleName": "SuperViewQR",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC5foundySSSgcSgvg",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC5foundySSSgcSgvg",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC5foundySSSgcSgvs",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC5foundySSSgcSgvs",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC5foundySSSgcSgvM",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC5foundySSSgcSgvM",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SuperViewQR09QRScannerB10ControllerC6failedySSSgcSgvp",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC6failedySSSgcSgvp",
+            "moduleName": "SuperViewQR",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC6failedySSSgcSgvg",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC6failedySSSgcSgvg",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC6failedySSSgcSgvs",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC6failedySSSgcSgvs",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC6failedySSSgcSgvM",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC6failedySSSgcSgvM",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SuperViewQR09QRScannerB10ControllerC4dataSSSgvp",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC4dataSSSgvp",
+            "moduleName": "SuperViewQR",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC4dataSSSgvg",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC4dataSSSgvg",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC4dataSSSgvs",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC4dataSSSgvs",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SuperViewQR09QRScannerB10ControllerC4dataSSSgvM",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC4dataSSSgvM",
+                "moduleName": "SuperViewQR",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController(im)viewDidLoad",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC11viewDidLoadyyF",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillAppear",
+            "printedName": "viewWillAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController(im)viewWillAppear:",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC14viewWillAppearyySbF",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewWillAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController(im)viewWillDisappear:",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC17viewWillDisappearyySbF",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "metadataOutput",
+            "printedName": "metadataOutput(_:didOutput:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureMetadataOutput",
+                "printedName": "AVFoundation.AVCaptureMetadataOutput",
+                "usr": "c:objc(cs)AVCaptureMetadataOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[AVFoundation.AVMetadataObject]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVMetadataObject",
+                    "printedName": "AVFoundation.AVMetadataObject",
+                    "usr": "c:objc(cs)AVMetadataObject"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureConnection",
+                "printedName": "AVFoundation.AVCaptureConnection",
+                "usr": "c:objc(cs)AVCaptureConnection"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController(im)captureOutput:didOutputMetadataObjects:fromConnection:",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC14metadataOutput_03didG04fromySo017AVCaptureMetadataG0C_SaySo16AVMetadataObjectCGSo0J10ConnectionCtF",
+            "moduleName": "SuperViewQR",
+            "objc_name": "captureOutput:didOutputMetadataObjects:fromConnection:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "prefersStatusBarHidden",
+            "printedName": "prefersStatusBarHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController(py)prefersStatusBarHidden",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC22prefersStatusBarHiddenSbvp",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "prefersStatusBarHidden",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController(im)prefersStatusBarHidden",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC22prefersStatusBarHiddenSbvg",
+                "moduleName": "SuperViewQR",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "prefersStatusBarHidden",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportedInterfaceOrientations",
+            "printedName": "supportedInterfaceOrientations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController(py)supportedInterfaceOrientations",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvp",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "supportedInterfaceOrientations",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientationMask",
+                    "printedName": "UIKit.UIInterfaceOrientationMask",
+                    "usr": "c:@E@UIInterfaceOrientationMask"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController(im)supportedInterfaceOrientations",
+                "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvg",
+                "moduleName": "SuperViewQR",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "supportedInterfaceOrientations",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QRScannerViewController",
+                "printedName": "SuperViewQR.QRScannerViewController",
+                "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SuperViewQR.QRScannerViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QRScannerViewController",
+                    "printedName": "SuperViewQR.QRScannerViewController",
+                    "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController(im)initWithCoder:",
+            "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "SuperViewQR",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SuperViewQR@objc(cs)QRScannerViewController",
+        "mangledName": "$s11SuperViewQR09QRScannerB10ControllerC",
+        "moduleName": "SuperViewQR",
+        "isOpen": true,
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SuperView",
+        "printedName": "SuperView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configureQR",
+            "printedName": "configureQR()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SuperViewQR@SuperViewCore@objc(cs)SuperView(cm)configureQR",
+            "mangledName": "$s13SuperViewCore0aB0C0aB2QRE09configureD0yyFZ",
+            "moduleName": "SuperViewQR",
+            "static": true,
+            "intro_iOS": "15.6",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SuperViewCore@objc(cs)SuperView",
+        "mangledName": "$s13SuperViewCore0aB0C",
+        "moduleName": "SuperViewCore",
+        "declAttributes": [
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewQR\/QRGeneratorViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 317,
+      "length": 19,
+      "value": "\"CIQRCodeGenerator\""
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewQR\/QRGeneratorViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 454,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewQR\/QRGeneratorViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 542,
+      "length": 9,
+      "value": "\"#000000\""
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewQR\/QRGeneratorViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 650,
+      "length": 9,
+      "value": "\"#FFFFFF\""
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewQR\/QRGeneratorViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 744,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewQR\/QRGeneratorViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4837,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewQR\/QRScannerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 317,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/m.kovacevic\/Development\/private\/superview_framework\/Library\/SuperViewQR\/QRScannerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5160,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}
